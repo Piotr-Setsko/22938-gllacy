@@ -1,42 +1,42 @@
 body {
-  min-width: 1200px;  
+  min-width: 1200px;
   font-weight: 400;
 	font-size: 16px;
   line-height: 22px;
 	font-family: 'Roboto', Arial, sans-serif;
 	color: #fff;
-  background-color: #849d8f;	
+  background-color: #849d8f;
 }
 
 .wrapper {
 	width: calc(1200px - 4.6%);
-	margin: 0 auto;	
+	margin: 0 auto;
 	padding: 0 2.3%;
 	border: 2px solid white;
 }
 
-.header-top {	
+.header-top {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	font-size: 0;
 }
 
 .header-top .header-logo {
 	display: inline-block;
 	width: 154px;
-	height: 64px;	
+	height: 64px;
 }
 
 .header-top nav {
 	display: inline-block;
-	vertical-align: top;	
+	vertical-align: top;
 }
 
-.header-top .main-menu {	
+.header-top .main-menu {
 	margin: 0;
 	padding: 0;
 	width: 500px;
-	list-style: none;	
+	list-style: none;
 }
 
 .header-top .main-menu > li {
@@ -47,7 +47,7 @@ body {
 .header-top .main-menu a {
 	display: block;
 	font-size: 16px;
-	color: #fff;	
+	color: #fff;
 }
 
 .main-menu .sub-menu {
@@ -67,17 +67,17 @@ body {
 
 .header-bottom {
 	display: flex;
-	justify-content: space-between; 	
+	justify-content: space-between;
 }
 
-.header-bottom .info-block {	
-	align-self: flex-top;
+.header-bottom .info-block {
+	align-self: flex-start;
 	width: 200px;
 }
 
 .header-bottom .slider-top {
-	alig-self: center;
-} 
+	align-self: center;
+}
 
 .header-bottom .slider {
 	align-self: flex-end;
@@ -91,16 +91,16 @@ body {
 	font-size: 16px;
 	display: inline-block;
 	vertical-align: top;
-	width: 500px;	
+	width: 500px;
 }
 
 .product {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.product-item {	
+.product-item {
 	width: 267px;
 	font-size: 16px;
 }
@@ -119,12 +119,12 @@ body {
 .map {
 	position: relative;
 	width: 1200px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	border: 2px solid white;
 }
 
 .map .marker {
-	position: absolute;	
+	position: absolute;
 }
 
 footer {
@@ -148,7 +148,7 @@ footer {
 }
 
 .half-links {
-	display: inline-block;	
+	display: inline-block;
 }
 
 .footer-links a {
