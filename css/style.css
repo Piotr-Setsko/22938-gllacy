@@ -1,10 +1,156 @@
 body {
-  width: 1200px;
-  margin: 0 auto;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
+  min-width: 1200px;  
   font-weight: 400;
+	font-size: 16px;
   line-height: 22px;
-  background-color: #849d8f;
-  border: 2px solid white;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #fff;
+  background-color: #849d8f;	
+}
+
+.wrapper {
+	width: calc(1200px - 4.6%);
+	margin: 0 auto;	
+	padding: 0 2.3%;
+	border: 2px solid white;
+}
+
+.header-top {	
+	display: flex;
+	justify-content: space-between;	
+	font-size: 0;
+}
+
+.header-top .header-logo {
+	display: inline-block;
+	width: 154px;
+	height: 64px;	
+}
+
+.header-top nav {
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.header-top .main-menu {	
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	list-style: none;	
+}
+
+.header-top .main-menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.header-top .main-menu a {
+	display: block;
+	font-size: 16px;
+	color: #fff;	
+}
+
+.main-menu .sub-menu {
+	position: absolute;
+	display: none;
+	list-style: none;
+}
+
+.main-menu > li:hover .sub-menu {
+	display: block;
+}
+
+.header-top .action-button a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.header-bottom {
+	display: flex;
+	justify-content: space-between; 	
+}
+
+.header-bottom .info-block {	
+	align-self: flex-top;
+	width: 200px;
+}
+
+.header-bottom .slider-top {
+	alig-self: center;
+} 
+
+.header-bottom .slider {
+	align-self: flex-end;
+}
+
+.items {
+	font-size: 0;
+}
+
+.item {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	width: 500px;	
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;	
+	flex-wrap: wrap;
+}
+
+.product-item {	
+	width: 267px;
+	font-size: 16px;
+}
+
+.half-features {
+	display: inline-block;
+	vertical-align: top;
+	width: 500px;
+	font-size: 0;
+}
+
+.feature-item {
+	font-size: 16px;
+}
+
+.map {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;	
+	border: 2px solid white;
+}
+
+.map .marker {
+	position: absolute;	
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-social {
+	font-size: 0;
+}
+.footer-social a {
+	font-size: 16px;
+}
+
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+.half-links {
+	display: inline-block;	
+}
+
+.footer-links a {
+	font-size: 16px;
 }
