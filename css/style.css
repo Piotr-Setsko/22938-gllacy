@@ -87,7 +87,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 2px solid black;
 }
 
 .stock-item,
