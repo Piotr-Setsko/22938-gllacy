@@ -36,15 +36,19 @@
 				</nav>
 			</div>
 			<div class="header-right">
-				<div class="action-button">
-					<a class="btn search" href="#">Поиск</a>
+				<ul class="action-button">
+					<li>
+						<a class="btn search" href="#">Поиск</a>
+					</li>
 	<!--		Модальная форма поиска
 					<div class="modal search-form">
 						<form action="/echo" method="post">
 						<input type="search" name="search" placeholder="Что ищем?">
 					</form>
 				</div>	-->
-				<a class="btn enter" href="#">Вход</a>
+				<li>
+					<a class="btn enter" href="#"><span></span>Вход</a>
+				</li>
 	<!--  Модальная форма входа в личный кабинет
 				<div class="modal enter-form">
 					<form action="/echo" method="post">
@@ -63,11 +67,22 @@
 							</div>
 						</form>
 					</div> -->
-					<a class="btn basket-empty" href="#">Пусто</a>
-				</div>
+					<li>
+						<a class="btn basket-empty" href="#"><span></span>Пусто</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="header-bottom">
+			<div class="info-block">
+				<p>С 10 до 20, ежедневно</p>
+				<b>8 812 450-25-25</b>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<div class="slider">
 			<div class="slider-control">
 				<input type="radio" id="btn-1" name="toggle" checked>
 				<input type="radio" id="btn-2" name="toggle">
@@ -89,13 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="info-block">
-				<p>С 10 до 20, ежедневно <b>8 812 450-25-25</b></p>
-			</div>
 		</div>
-	</header>
-	<main>
-		<div class="wrapper">
 			<section class="stock-items flex">
 				<article class="stock-item left">
 					<h3>Малина даром!</h3>
@@ -115,7 +124,7 @@
 			<section class="products flex">
 				<div class="product-item">
 					<img src="img/1.png"	width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-					<div class="price">310&#8381;<span>/кг</span></div>
+					<div class="price">310 &#8381;<span>/кг</span></div>
 					<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
@@ -123,7 +132,7 @@
 				</div>
 				<div class="product-item">
 					<img src="img/2.png"	width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-					<div class="price">380&#8381;<span>/кг</span></div>
+					<div class="price">380 &#8381;<span>/кг</span></div>
 					<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
@@ -131,7 +140,7 @@
 				</div>
 				<div class="product-item">
 					<img src="img/3.png"	width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-					<div class="price">355&#8381;<span>/кг</span></div>
+					<div class="price">355 &#8381;<span>/кг</span></div>
 					<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
@@ -139,7 +148,7 @@
 				</div>
 				<div class="product-item">
 					<img src="img/4.png"	width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-					<div class="price">415&#8381;<span>/кг</span></div>
+					<div class="price">415 &#8381;<span>/кг</span></div>
 					<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
@@ -196,19 +205,19 @@
 		<div class="map">
 			<div class="marker">Ice</div>
 			<section class="map-form">
-				<p class="address norm">
+				<p class="address-norm">
 				Адрес главного офиса и офлайн магазина:
 				</p>
-				<b class="address bold">
+				<b class="address-bold">
 				ул. Большая Конюшенная 19/8, Санкт-Петербург
 				</b>
-				<p class="tel norm">
+				<p class="tel-norm">
 				Для заказов по телефону:
 				</p>
-				<b class="tel bold">
+				<b class="tel-bold">
 				8 812 450-25-25
 				</b>
-				<p class="tel norm">
+				<p class="time-norm">
 				(с 10 до 20 ежедневно)
 				</p>
 				<div class="btn-map">
