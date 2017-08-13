@@ -4,7 +4,7 @@ body {
 	font-size: 16px;
   line-height: 22px;
 	font-family: 'Roboto', Arial, sans-serif;
-	color: #fff;
+	color: #ffffff;
   background-color: #849d8f;
 }
 
@@ -12,7 +12,6 @@ body {
 	width: calc(1200px - 4.6%);
 	margin: 0 auto;
 	padding: 0 2.3%;
-	border: 2px solid white;
 }
 
 .header-top {
@@ -25,29 +24,41 @@ body {
 	display: inline-block;
 	width: 154px;
 	height: 64px;
+	padding-top: 9px;
 }
 
 .header-top .main-navigation {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 32px;
+	padding-left: 24px;
 }
 
 .main-navigation .main-menu {
 	margin: 0;
 	padding: 0;
-	width: 500px;
+	min-width: 350px;
 	list-style: none;
 }
 
 .main-navigation .main-menu > li {
 	position: relative;
 	display: inline-block;
+	padding-right: 27px;
 }
 
 .main-navigation .main-menu a {
 	display: block;
+	font-weight: 700;
 	font-size: 16px;
-	color: #fff;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-menu > li > a {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #98b2a4;
 }
 
 .main-menu .sub-menu {
@@ -62,7 +73,7 @@ body {
 
 .header-top .action-button a {
 	font-size: 16px;
-	color: #fff;
+	color: #ffffff;
 }
 
 .header-bottom {
