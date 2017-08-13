@@ -1,0 +1,143 @@
+body {
+  min-width: 1200px;
+  font-weight: 400;
+	font-size: 16px;
+  line-height: 22px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #ffffff;
+  background-color: #849d8f;
+}
+
+.wrapper {
+	width: calc(1200px - 4.6%);
+	margin: 0 auto;
+	padding: 0 2.3%;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0;
+}
+
+.header-top .header-logo {
+	display: inline-block;
+	width: 154px;
+	height: 64px;
+	padding-top: 9px;
+}
+
+.header-top .main-navigation {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 32px;
+	padding-left: 24px;
+}
+
+.main-navigation .main-menu {
+	margin: 0;
+	padding: 0;
+	min-width: 350px;
+	list-style: none;
+}
+
+.main-navigation .main-menu > li {
+	position: relative;
+	display: inline-block;
+	padding-right: 27px;
+}
+
+.main-navigation .main-menu a {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-menu > li > a {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #98b2a4;
+}
+
+.main-menu .sub-menu {
+	position: absolute;
+	display: none;
+	list-style: none;
+}
+
+.main-menu > li:hover .sub-menu {
+	display: block;
+}
+
+.header-top .action-button a {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.header-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-bottom .info-block {
+	align-self: flex-start;
+	width: 200px;
+}
+
+.header-bottom .slider-top {
+	align-self: center;
+}
+
+.header-bottom .slider-control {
+	align-self: flex-end;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.stock-item,
+.subs,
+.blog {
+	width: 500px;
+}
+
+.product-item {
+	width: 267px;
+}
+
+.sorting  {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-height: 300px;
+}
+
+
+.feature-list p {
+	width: 500px;
+}
+
+.map {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	border: 2px solid white;
+}
+
+.map .marker {
+	position: absolute;
+}
+
+
+.links-list {
+	min-width: 400px;
+	max-height: 60px;
+}
