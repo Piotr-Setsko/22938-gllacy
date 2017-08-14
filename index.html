@@ -3,6 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин мороженого «Глейси»</title>
+	
+<style>
+		html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "gllacy-index-1200.jpg" );
+  }
+  
+  BODY {
+    opacity: 1;
+  } 	
+	</style>
+	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -17,7 +30,7 @@
 				<nav class="main-navigation">
 					<ul class="main-menu">
 						<li>
-							<a href="#">Каталог</a>
+							<a class="catalog-link" href="#">Каталог</a>
 							<ul class="sub-menu">
 								<li><a class="item-bold" href="#">Новинки</a></li>
 								<li><a href="catalog.html">Сливочное</a></li>
@@ -38,37 +51,33 @@
 			<div class="header-right">
 				<ul class="action-button">
 					<li>
-						<a class="btn search" href="#">Поиск</a>
+						<a class="btn-link search" href="#">Поиск</a>	
+						<div class="modal search-form">
+							<form action="/echo" method="post">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>	
 					</li>
-	<!--		Модальная форма поиска
-					<div class="modal search-form">
-						<form action="/echo" method="post">
-						<input type="search" name="search" placeholder="Что ищем?">
-					</form>
-				</div>	-->
-				<li>
-					<a class="btn enter" href="#"><span></span>Вход</a>
-				</li>
-	<!--  Модальная форма входа в личный кабинет
-				<div class="modal enter-form">
-					<form action="/echo" method="post">
-							<input type="email" name="email" placeholder="Электронная почта" required>
-							<input type="password" name="password" placeholder="Пароль" required>
-							<div class="half-width">
-								<div class="button">
-									<input type="submit" name="enter" value="Войти">
-								</div>
-							</div>
-							<div class="half-width">
-								<div class="registration">
-									<a class="reg-password" href="#">Забыли пароль?</a>
-									<a class="reg-new" href="#">Новая регистрация</a>
-								</div>
-							</div>
-						</form>
-					</div> -->
 					<li>
-						<a class="btn basket-empty" href="#"><span></span>Пусто</a>
+						<a class="btn-link enter" href="#">Вход</a>	
+						<div class="modal enter-form">
+							<form action="/echo" method="post">
+								<input type="email" name="email" placeholder="Электронная почта" required>
+								<input type="password" name="password" placeholder="Пароль" required>
+								<div class="half-width">
+									<div class="button">
+										<input type="submit" name="enter" value="Войти">
+									</div>								
+									<div class="registration">
+										<a class="reg-password" href="#">Забыли пароль?</a>
+										<a class="reg-new" href="#">Новая регистрация</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</li>	
+					<li>
+						<a class="btn-link basket" href="#">Пусто</a>
 					</li>
 				</ul>
 			</div>
@@ -95,7 +104,7 @@
 			</div>
 			<div class="slider-top">
 				<div class="slider-slides">
-					<img src="#" width="#" height="#" alt="Крем-брюле и пломбир">
+					<img src="img/" width="" height="" alt="Крем-брюле и пломбир">
 					<div class="slider-tagline">
 						<h2>Крем-брюле и пломбир с малиновым джемом</h2>
 						<div class="btn-slider">
