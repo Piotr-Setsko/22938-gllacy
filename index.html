@@ -12,7 +12,7 @@
   }
   
   BODY {
-    opacity: 1;
+    opacity: 0.7;
   } 	
 	</style>
 	
@@ -25,7 +25,7 @@
 		<div class="header-top">
 			<div class="header-left">
 				<div class="header-logo">
-					<img src="img/logo.png" width="154" height="64" alt="GlassyShop">
+					<img src="img/logo.svg" width="154" height="64" alt="GlassyShop">
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-menu">
@@ -51,7 +51,11 @@
 			<div class="header-right">
 				<ul class="action-button">
 					<li>
-						<a class="btn-link search" href="#">Поиск</a>	
+						<a class="btn-link search" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+							<path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+							</svg>							
+						</a>	
 						<div class="modal search-form">
 							<form action="/echo" method="post">
 								<input type="search" name="search" placeholder="Что ищем?">
@@ -59,7 +63,12 @@
 						</div>	
 					</li>
 					<li>
-						<a class="btn-link enter" href="#">Вход</a>	
+						<a class="btn-link enter" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+							<g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
+							</svg>
+							<span>Вход</span>							
+						</a>	
 						<div class="modal enter-form">
 							<form action="/echo" method="post">
 								<input type="email" name="email" placeholder="Электронная почта" required>
@@ -77,7 +86,7 @@
 						</div>
 					</li>	
 					<li>
-						<a class="btn-link basket" href="#">Пусто</a>
+						<a class="btn-link basket" href="#"><span>Пусто</span></a>
 					</li>
 				</ul>
 			</div>
@@ -91,7 +100,19 @@
 	</header>
 	<main>
 		<div class="wrapper">
-		<div class="slider">
+		<div class="slider">			
+			<div class="slider-top">
+				<div class="slider-slides">
+					<img src="img/ice_slider_1_lg.png" width="1045" height="881" alt="Крем-брюле и пломбир">
+					<div class="slider-tagline">
+						<h2 class="slider-name">Крем-брюле и пломбир с малиновым джемом</h2>
+					</div>	
+				</div>
+			</div>	
+			<div class="slider-bottom">
+				<div class="btn-slider">
+					<a class="btn order" href="#">Давайте оба!</a>
+				</div>			
 			<div class="slider-control">
 				<input type="radio" id="btn-1" name="toggle" checked>
 				<input type="radio" id="btn-2" name="toggle">
@@ -102,28 +123,18 @@
            <label for="btn-3"></label>
          </div>
 			</div>
-			<div class="slider-top">
-				<div class="slider-slides">
-					<img src="img/" width="" height="" alt="Крем-брюле и пломбир">
-					<div class="slider-tagline">
-						<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-					</div>	
-				</div>	
-				<div class="btn-slider">
-					<a class="btn order" href="#">Давайте оба!</a>
-				</div>
-			</div>		
+		</div>			
 		</div>
 			<section class="stock-items flex">
 				<article class="stock-item left">
-					<h3>Малинка даром!</h3>
+					<h3 class="stock-name">Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<div class="btn-stock">
 						<a class="btn order-mini" href="#">Хочу варенье!</a>
 					</div>
 				</article>
 				<article class="stock-item right">
-					<h3>Шоколадки даром!</h3>
+					<h3 class="stock-name">Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<div class="btn-stock">
 						<a class="btn order-mini" href="#">Хочу шоколадки!</a>
@@ -132,32 +143,32 @@
 			</section>
 			<section class="products flex">
 				<div class="product-item">
-					<img src="img/1.png"	width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-					<div class="price">310<img src="img/ruble.svg"><span>/кг</span></div>
+					<img src="img/1.jpg"	width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<div class="price">310<img src="img/ruble.svg" alt="&#8381;"><span>/кг</span></div>
 					<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
 				<div class="product-item">
-					<img src="img/2.png"	width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-					<div class="price">380<img src="img/ruble.svg"><span>/кг</span></div>
+					<img src="img/2.jpg"	width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					<div class="price">380<img src="img/ruble.svg" alt="&#8381;"><span>/кг</span></div>
 					<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
 				<div class="product-item">
-					<img src="img/3.png"	width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-					<div class="price">355<img src="img/ruble.svg"><span>/кг</span></div>
+					<img src="img/3.jpg"	width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<div class="price">355<img src="img/ruble.svg" alt="&#8381;"><span>/кг</span></div>
 					<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>				
 				<div class="product-item">
-					<img src="img/4.png"	width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-					<div class="price">415<img src="img/ruble.svg"><span>/кг</span></div>
+					<img src="img/4.jpg"	width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+					<div class="price">415<img src="img/ruble.svg" alt="&#8381;"><span>/кг</span></div>
 					<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
 					<div class="product-view">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
@@ -165,7 +176,7 @@
 				</div>
 			</section>
 			<section class="features">
-				<h3>Магазин Глейси &#8212; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+				<h3 class="feateres-details">Магазин Глейси &#8212; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
 				<ul class="feature-list sorting">
 					<li class="feature-item">
 						<p>
@@ -199,6 +210,7 @@
 					</div>
 				</article>
 				<article class="subs-form">
+					<div class="subs-fon">
 					<p class="subs">
 					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 					</p>
@@ -207,6 +219,7 @@
 							<input type="email" name="subscription-email" value="Электронная почта">
 							<input type="submit" name="send-email" value="Отправить">
 						</form>
+					</div>
 					</div>
 				</article>
 			</article>
