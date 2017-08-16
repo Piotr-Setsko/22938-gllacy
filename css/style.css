@@ -12,20 +12,20 @@ body {
 
 .wrapper {
 	width: calc(1200px - (1200px*0.046));
-	margin: 0 auto;		
+	margin: 0 auto;
 }
 
-.btn {	
+.btn {
 	display: inline-block;
-	padding: 10px 23px;	
+	padding: 10px 23px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
-	color: #ffffff;	
+	color: #ffffff;
 	background-image: linear-gradient(to top, #e74a35, #f26843);
 	border-radius: 30px;
 	text-decoration:none;
-	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);	
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
@@ -72,17 +72,17 @@ body {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
-.main-menu > li > a {	
-	border-bottom: 2px solid rgba(255, 255, 255, 0.2);	
-}	
-
+.main-menu > li > a {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+/* Выпадающее меню
 .main-menu > li:hover .sub-menu {
-	display: block;	
+	display: block;
 	background-color: white;
-}
+} */
 
 .main-menu > li:hover .sub-menu a {
 	color: black;
@@ -95,7 +95,7 @@ body {
 	border: none;
 	margin: -5px -10px;
 	padding: 5px 10px;
-} 
+}
 
 .main-menu > li > a:active {
 	color: black;
@@ -111,25 +111,25 @@ body {
 	display: none;
 	position: absolute;
 	top: 23px;
-	left: -10px;	
+	left: -10px;
 	margin: 0;
 	padding: 0;
-	min-width: 130px;		
+	min-width: 130px;
 	border-top: 3px solid #849d8f;
 	border-radius: 10px;
-	list-style: none;	
+	list-style: none;
 }
 
 .sub-menu li {
 	padding: 5px 10px;
 }
-
+/* Выподающее меню
 .sub-menu li:hover {
-	background-color: yellow;	
-}
+	background-color: yellow;
+} */
 
 .sub-menu a {
-	display: block;	
+	display: block;
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -157,15 +157,15 @@ body {
 	line-height: 16px;
 }
 
-.action-button a {	
+.action-button a {
 	padding-left: 11px;
 	font-weight: 500;
 	color: #ffffff;
 	text-decoration: none;
 }
 
-.action-button .search {	
-	display: inline-block;	
+.action-button .search {
+	display: inline-block;
 	padding: 7px 7px 0;
 	font-size: 0px;
 }
@@ -175,53 +175,50 @@ body {
 }
 
 .action-button .enter {
-	display: inline-block;			
-	padding: 5px 17px 3px 10px;	
+	display: inline-block;
+	padding: 5px 17px 3px 10px;
 }
 
 .action-button .enter span {
-	display: inline-block;	
+	display: inline-block;
 	vertical-align: top;
-	padding-top: 3px;	
+	padding-top: 3px;
 }
 
-.action-button li:hover {	
-	background-color: rgba(255, 255, 255, 1);	
+.action-button li:hover {
+	background-color: rgba(255, 255, 255, 1);
 }
-
+/* Пробы работы с svg
 .action-button svg {
 	fill: #ffffff;
 }
 
-.action-button li:hover svg {	fill: #000000;
-}
-
-.action-button li:hover span {
-	color: #000000;
+.action-button li:hover svg {
+  fill: #000000;
 }
 
 .action-button li:hover .modal {
-	display: block;	
-} 
+	display: block;
+} */
 
 .modal {
 	display: none;
-	position: absolute;	
+	position: absolute;
 	background: #ffffff;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 
 .search-form {
-	left: -190px;	
+	left: -190px;
 }
 
-.search-form input {	
+.search-form input {
 	width: 200px;
 	margin: 20px 10px;
 	padding: 10px;
 	border: none;
 	border: 1px solid black;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 
 .enter-form input {
@@ -232,25 +229,25 @@ body {
 	border: 1px solid black;
 	border-radius: 5px;
 }
-
-input[type="submit"] {		
+ /* Кнопка
+input[type="submit"] {
 	padding: 12px 22px;
-	color: #ffffff;		
+	color: #ffffff;
 	background-color: red;
 	border-radius: 30px;
 	text-decoration:none;
 	text-shadow: 1px 1px 5px #333333;
 	box-shadow: 0 2px 5px #333333;
-}
+} */
 
-.enter-form .registration a {	
-	padding: 0;	
-	font-size: 10px;	
+.enter-form .registration a {
+	padding: 0;
+	font-size: 10px;
 	color: black;
-	border: 1px solid black;	
+	border: 1px solid black;
 }
 
-.enter-form .half-width {		
+.enter-form .half-width {
 	display: flex;
 }
 
@@ -265,7 +262,7 @@ input[type="submit"] {
 }
 
 .info-block p {
-	margin: 0;	
+	margin: 0;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
@@ -278,11 +275,11 @@ input[type="submit"] {
 	line-height: 24px;
 }
 
-.slider {	
+.slider {
 	margin-top: -118px;
 }
 
- .slider-top .slider-slides {	
+ .slider-top .slider-slides {
 	margin: 0 auto;
 	width: 1045px;
 }
@@ -291,13 +288,13 @@ input[type="submit"] {
 	margin: 0 auto;
 	width: 670px;
 }
- 
+
  .slider-tagline .slider-name {
-	margin: 0;	
-	margin-top: -495px;	
+	margin: 0;
+	margin-top: -495px;
 	font-weight: 700;
 	font-size: 60px;
-	line-height: 60.35px;	
+	line-height: 60.35px;
 	text-align: center;
 }
 
@@ -305,11 +302,11 @@ input[type="submit"] {
 	 margin-top: 30px;
 	 text-align: center;
  }
- 
+
  .btn-slider .order {
 	width: 240px;
 	font-size: 32px;
-	line-height: 44px;	
+	line-height: 44px;
  }
 
 .flex {
@@ -317,11 +314,11 @@ input[type="submit"] {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
- 
+
 .stock-item,
 .subs-form,
 .blog {
-	width: 560px;	
+	width: 560px;
 }
 
 .stock-items {
@@ -342,10 +339,10 @@ input[type="submit"] {
 .stock-item  .stock-name {
 	margin: 0;
 	margin-top: 18px;
-	margin-left: 18px;	
+	margin-left: 18px;
 	font-weight: 700;
 	font-size: 35px;
-	line-height: 41px;	
+	line-height: 41px;
 }
 
 .stock-item p {
@@ -361,15 +358,15 @@ input[type="submit"] {
 .stock-item .btn-stock{
 	margin-top: 45px;
 	margin-right: 20px;
-	text-align: right;	
+	text-align: right;
 }
 
 .product-item {
-	width: 267px;	
+	width: 267px;
 	margin-top: 40px;
 }
 
-.product-item img {	
+.product-item img {
 	border: 0 solid black;
 	border-radius: 50%;
 	overflow: hidden;
@@ -382,15 +379,15 @@ input[type="submit"] {
 	line-height: 45px;
 }
 
-.price img {	
+.price img {
 	padding-bottom: 7px;
 	padding-left: 3px;
-	vertical-align: bottom;	
+	vertical-align: bottom;
 }
 
 .price span {
-	
-	font-size: 30px;	
+
+	font-size: 30px;
 }
 
 .product-item p {
@@ -413,22 +410,22 @@ input[type="submit"] {
 }
 
 .sorting  {
-	display: flex;	
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	list-style: none;
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 
 .feature-list {
 	max-height: 280px;
 }
 
-.features {	 
-	margin-top: 37px;	
+.features {
+	margin-top: 37px;
 	min-height: 305px;
-	color: black;	
+	color: black;
 	background: url(../img/waffle_bg.jpg);
 	border-radius: 15px;
 }
@@ -439,17 +436,17 @@ input[type="submit"] {
 	padding-left: 22px;
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 30px;	
+	line-height: 30px;
 }
 
-.feature-list .feature-item {		
+.feature-list .feature-item {
 	margin-top: 22px;
-	margin-left: 22px;	
+	margin-left: 22px;
 	width: 530px;
 }
 
-.feature-list p {	
-	margin: 0;	
+.feature-list p {
+	margin: 0;
 	padding-left: 53px;
 }
 
@@ -464,21 +461,21 @@ input[type="submit"] {
 }
 
 .blog {
-	background: url(../img/strawberry_bg.jpg) no-repeat;	
+	background: url(../img/strawberry_bg.jpg) no-repeat;
 	border-radius: 15px;
 }
 
 .advice-block .blog b {
-	display: block;	
+	display: block;
 	margin-top: 26px;
-	margin-left: 20px;	
+	margin-left: 20px;
 	font-weight: 500;
 }
 
 .blog .blog-info {
 	margin: 0;
 	margin-top: 4px;
-	margin-left: 19px;	
+	margin-left: 19px;
 	width: 285px;
 	font-weight: 700;
 	font-size: 24px;
@@ -486,15 +483,15 @@ input[type="submit"] {
 }
 
 .blog-info a {
-	color: #000000;	
+	color: #000000;
 }
 
 .subs-form {
-	background: url(../img/bg-post.svg) no-repeat;	
+	background: url(../img/bg-post.svg) no-repeat;
 	border-radius: 15px;
 }
 
-.subs-form .subs-fon {	
+.subs-form .subs-fon {
 	margin: 5px;
 	min-height: 210px;
   background-color: #f8f7f4;
@@ -502,7 +499,7 @@ input[type="submit"] {
 }
 
 .subs-fon .subs {
-	margin: 0;	
+	margin: 0;
 	padding-top: 32px;
 	padding-left: 22px;
 	width: 510px;
@@ -526,7 +523,7 @@ input[type="submit"] {
 	margin-top: 40px;
 	width: 1200px;
 	min-height: 430px;
-	background: url(../img/map_bg.jpg) no-repeat;	
+	background: url(../img/map_bg.jpg) no-repeat;
 }
 
 .map .marker {
@@ -536,7 +533,7 @@ input[type="submit"] {
 
 .map-form {
 	position: absolute;
-	top: 66px;	
+	top: 66px;
 	right: 27px;
 	width: 302px;
 	min-height: 300px;
@@ -554,7 +551,7 @@ input[type="submit"] {
 	margin-left: 25px;
 	width: 150px;
 	font-size: 14px;
-	line-height: 20px;	
+	line-height: 20px;
 }
 
 .map-form .address-bold {
@@ -574,7 +571,7 @@ input[type="submit"] {
 }
 
 .map-form .tel-bold {
-	display: inline-block;	
+	display: inline-block;
 	margin-top: 5px;
 	margin-left: 25px;
 	font-weight: 700;
@@ -588,9 +585,9 @@ input[type="submit"] {
 	line-height: 22px;
 }
 
-.btn-map {	
+.btn-map {
 	margin-top: 25px;
-	margin-left: 28px;	
+	margin-left: 28px;
 }
 
 .btn-map .feedback {
@@ -610,11 +607,11 @@ footer .footer-social {
 	display: inline-block;
 	margin-right: 11px;
 	width: 38px;
-	height: 38px;		
+	height: 38px;
 	background-color: rgba(255, 255, 255, 0.5);
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	background-position: 3px 3px;
-	border-radius: 50%;	
+	border-radius: 50%;
 	vertical-align: middle;
 }
 
@@ -630,29 +627,29 @@ footer .footer-social {
 }
 
 .footer-social .social-btn-vk {
-	background-image: url(../img/vk.svg);	
+	background-image: url(../img/vk.svg);
 }
 
-.footer-links .links-list {	
+.footer-links .links-list {
 	margin-top: 29px;
 	margin-left: 20px;
 	min-width: 330px;
 	max-height: 50px;
 	font-size: 13px;
-	line-height: 18px;	
+	line-height: 18px;
 }
 
 .links-list li {
 	margin-top: 5px;
 }
 
-.links-list a {	
-	color: #ffffff;	
+.links-list a {
+	color: #ffffff;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.links-list .heart {	
+.links-list .heart {
 	font-weight: 700;
 }
 
@@ -660,11 +657,11 @@ footer .footer-social {
 	margin-left: -21px;
 	margin-right: 9px;
 	display: inline-block;
-	content: "";	
+	content: "";
 	vertical-align: bottom;
 	width: 15px;
 	height: 15px;
-	background-image: url(../img/heart.svg); 
+	background-image: url(../img/heart.svg);
 	background-repeat: no-repeat;
 }
 
@@ -680,17 +677,17 @@ footer .footer-social {
 
 .copyright-logo a {
 	display: inline-block;
-	content: "";	
+	content: "";
 	vertical-align: middle;
 	width: 107px;
-	height: 38px; 	
+	height: 38px;
 	font-size: 0;
-	background-image: url(../img/logo-htmlacademy.svg); 
+	background-image: url(../img/logo-htmlacademy.svg);
 	background-repeat: no-repeat;
 }
 
 .copyright p {
-	margin: 0;	
+	margin: 0;
 }
 
 .copyright p a {
