@@ -78,11 +78,11 @@ body {
 .main-menu > li > a {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
-/* Выпадающее меню
+
 .main-menu > li:hover .sub-menu {
 	display: block;
 	background-color: white;
-} */
+}
 
 .main-menu > li:hover .sub-menu a {
 	color: black;
@@ -123,10 +123,10 @@ body {
 .sub-menu li {
 	padding: 5px 10px;
 }
-/* Выподающее меню
+
 .sub-menu li:hover {
 	background-color: yellow;
-} */
+}
 
 .sub-menu a {
 	display: block;
@@ -188,7 +188,7 @@ body {
 .action-button li:hover {
 	background-color: rgba(255, 255, 255, 1);
 }
-/* Пробы работы с svg
+
 .action-button svg {
 	fill: #ffffff;
 }
@@ -199,7 +199,7 @@ body {
 
 .action-button li:hover .modal {
 	display: block;
-} */
+}
 
 .modal {
 	display: none;
@@ -229,7 +229,7 @@ body {
 	border: 1px solid black;
 	border-radius: 5px;
 }
- /* Кнопка
+
 input[type="submit"] {
 	padding: 12px 22px;
 	color: #ffffff;
@@ -238,7 +238,7 @@ input[type="submit"] {
 	text-decoration:none;
 	text-shadow: 1px 1px 5px #333333;
 	box-shadow: 0 2px 5px #333333;
-} */
+}
 
 .enter-form .registration a {
 	padding: 0;
@@ -315,6 +315,12 @@ input[type="submit"] {
 	flex-wrap: wrap;
 }
 
+.flex1 {
+	display: flex;
+	margin: 0 -12.8px;
+	flex-wrap: wrap;
+}
+
 .stock-item,
 .subs-form,
 .blog {
@@ -363,7 +369,8 @@ input[type="submit"] {
 
 .product-item {
 	width: 267px;
-	margin-top: 40px;
+	margin: 0 12.8px;
+	margin-top: 42px;
 }
 
 .product-item img {
