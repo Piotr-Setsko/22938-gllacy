@@ -54,7 +54,7 @@ body {
 }
 
 .main-navigation .main-menu {
-	margin: 0;
+	margin: 0;	
 	padding: 0;
 	min-width: 350px;
 	list-style: none;
@@ -88,13 +88,13 @@ body {
 	color: black;
 }
 
-.main-menu > li > a:hover {
+.main-menu > li:hover > a {
 	color: black;
 	background-color: white;
 	border-radius: 30px;
 	border: none;
-	margin: -5px -10px;
-	padding: 5px 10px;
+	margin: -5px -13px -8px;
+	padding: 5px 13px 8px;
 }
 
 .main-menu > li > a:active {
@@ -107,25 +107,30 @@ body {
 	box-shadow: inset 0 2px 5px 0 black;
 }
 
+/*.main-menu .catalog-link {
+	margin-bottom: 10px;	
+}*/
+
 .main-menu .sub-menu {
 	display: none;
 	position: absolute;
-	top: 23px;
-	left: -10px;
+	top: 29px;
+	left: -20px;
 	margin: 0;
 	padding: 0;
-	min-width: 130px;
-	border-top: 3px solid #849d8f;
+	min-width: 143px;	
 	border-radius: 10px;
-	list-style: none;
+	list-style: none;	
 }
 
 .sub-menu li {
-	padding: 5px 10px;
+	padding: 4px 20px 6px;
 }
 
-.sub-menu li:hover {
-	background-color: yellow;
+.sub-menu hr {
+	margin: 0 5px;
+	color: rgba(255, 255, 255, 0.2);	
+	border-color: rgba(255, 255, 255, 0.2);
 }
 
 .sub-menu a {
@@ -136,13 +141,29 @@ body {
 
 .sub-menu .item-bold {
 	font-weight: 700;
-	border-bottom: 1px solid black;
+}	
+
+.sub-menu li:first-child {	
+	padding: 7px 20px 10px;	
+	border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+}
+
+.sub-menu li:last-child {
+	padding: 3px 20px 10px;
+	border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+
+.sub-menu li:hover {
+	background-color: yellow;
 }
 
 .header-right .action-button {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	list-style: none;	
+	
 }
 
 .header-right .action-button li {
@@ -166,35 +187,41 @@ body {
 
 .action-button .search {
 	display: inline-block;
-	padding: 7px 7px 0;
+	padding: 6px 9px 0 6px;	
 	font-size: 0px;
-}
-
-.action-button .basket {
-	padding-right: 33px;
 }
 
 .action-button .enter {
 	display: inline-block;
-	padding: 5px 17px 3px 10px;
+	padding: 5px 17px 3px 15px;
 }
 
-.action-button .enter span {
+.action-button .basket {
+	display: inline-block;	
+	padding: 5px 33px 3px 15px;
+}
+
+.action-button span {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 3px;
+	padding-left: 3px; 
 }
 
 .action-button li:hover {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 1);	
 }
 
 .action-button svg {
 	fill: #ffffff;
 }
 
-.action-button li:hover svg {
+.action-button li:hover svg {
   fill: #000000;
+}
+
+.action-button li:hover span {
+	color: black;
 }
 
 .action-button li:hover .modal {
@@ -203,28 +230,36 @@ body {
 
 .modal {
 	display: none;
-	position: absolute;
-	background: #ffffff;
+	position: absolute;	
+	background: #ffffff;	
 	border-radius: 5px;
 }
 
 .search-form {
-	left: -190px;
+	left: -309px;
+	top: 32px;
 }
 
 .search-form input {
-	width: 200px;
-	margin: 20px 10px;
-	padding: 10px;
+	width: 310px;
+	margin: 20px 16px;
+	padding: 13px 12px;
 	border: none;
 	border: 1px solid black;
 	border-radius: 5px;
 }
 
+.enter-form {
+	left: -185px;
+	top: 36px;
+	min-height: 215px;
+}
+
 .enter-form input {
-	width: 200px;
-	margin: 10px 10px;
-	padding: 10px;
+	width: 210px;
+	margin-top: 20px;
+	margin-left: 20px;	
+	padding: 13px;
 	border: none;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -232,6 +267,7 @@ body {
 
 input[type="submit"] {
 	padding: 12px 22px;
+	width: 50px;
 	color: #ffffff;
 	background-color: red;
 	border-radius: 30px;
@@ -286,7 +322,7 @@ input[type="submit"] {
 
 .slider-top .slider-tagline {
 	margin: 0 auto;
-	width: 670px;
+	width: 675px;
 }
 
  .slider-tagline .slider-name {
