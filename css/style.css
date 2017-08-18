@@ -124,7 +124,7 @@ body {
 }
 
 .sub-menu li hr {
-	margin: 0 10px;
+	margin: 0 5px;
 	color: rgba(255, 255, 255, 0.2);
 	border-color: rgba(255, 255, 255, 0.2);
 }
@@ -137,18 +137,16 @@ body {
 
 .sub-menu .item-bold {
 	font-weight: 700;
-	margin-bottom: 10px;
-
 }
 
-.sub-menu .item-bold {
-	padding: 7px 20px 10px;
+.sub-menu li:first-child,
+ .sub-menu li:first-child a {	
 	border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.sub-menu a:last-child {
-	padding: 3px 20px 10px;
+.sub-menu li:last-child,
+.sub-menu li:last-child a {	
 	border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
