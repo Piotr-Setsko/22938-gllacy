@@ -54,7 +54,7 @@ body {
 }
 
 .main-navigation .main-menu {
-	margin: 0;	
+	margin: 0;
 	padding: 0;
 	min-width: 350px;
 	list-style: none;
@@ -81,7 +81,6 @@ body {
 
 .main-menu > li:hover .sub-menu {
 	display: block;
-	background-color: white;
 }
 
 .main-menu > li:hover .sub-menu a {
@@ -107,29 +106,26 @@ body {
 	box-shadow: inset 0 2px 5px 0 black;
 }
 
-/*.main-menu .catalog-link {
-	margin-bottom: 10px;	
-}*/
-
 .main-menu .sub-menu {
 	display: none;
 	position: absolute;
-	top: 29px;
+	top: 26px;
 	left: -20px;
 	margin: 0;
 	padding: 0;
-	min-width: 143px;	
+	padding-top: 5px;
+	min-width: 143px;
 	border-radius: 10px;
-	list-style: none;	
+	list-style: none;
 }
 
 .sub-menu li {
-	padding: 4px 20px 6px;
+	background-color: white;
 }
 
-.sub-menu hr {
-	margin: 0 5px;
-	color: rgba(255, 255, 255, 0.2);	
+.sub-menu li hr {
+	margin: 0 10px;
+	color: rgba(255, 255, 255, 0.2);
 	border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -141,29 +137,30 @@ body {
 
 .sub-menu .item-bold {
 	font-weight: 700;
-}	
+	margin-bottom: 10px;
 
-.sub-menu li:first-child {	
-	padding: 7px 20px 10px;	
-	border-top-left-radius: 10px; 
+}
+
+.sub-menu .item-bold {
+	padding: 7px 20px 10px;
+	border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.sub-menu li:last-child {
+.sub-menu a:last-child {
 	padding: 3px 20px 10px;
-	border-bottom-left-radius: 10px; 
+	border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.sub-menu li:hover {
+.sub-menu a:hover {
 	background-color: yellow;
 }
 
 .header-right .action-button {
 	margin: 0;
 	padding: 0;
-	list-style: none;	
-	
+	list-style: none;
 }
 
 .header-right .action-button li {
@@ -187,7 +184,7 @@ body {
 
 .action-button .search {
 	display: inline-block;
-	padding: 6px 9px 0 6px;	
+	padding: 6px 9px 0 6px;
 	font-size: 0px;
 }
 
@@ -197,7 +194,7 @@ body {
 }
 
 .action-button .basket {
-	display: inline-block;	
+	display: inline-block;
 	padding: 5px 33px 3px 15px;
 }
 
@@ -205,11 +202,11 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 3px;
-	padding-left: 3px; 
+	padding-left: 3px;
 }
 
 .action-button li:hover {
-	background-color: rgba(255, 255, 255, 1);	
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .action-button svg {
@@ -230,8 +227,8 @@ body {
 
 .modal {
 	display: none;
-	position: absolute;	
-	background: #ffffff;	
+	position: absolute;
+	background: #ffffff;
 	border-radius: 5px;
 }
 
@@ -258,7 +255,7 @@ body {
 .enter-form input {
 	width: 210px;
 	margin-top: 20px;
-	margin-left: 20px;	
+	margin-left: 20px;
 	padding: 13px;
 	border: none;
 	border: 1px solid black;
@@ -304,7 +301,7 @@ input[type="submit"] {
 	line-height: 16px;
 }
 
-.info-block b{
+.info-block b {
 	display: block;
 	margin-top: 5px;
 	font-size: 22px;
@@ -429,7 +426,6 @@ input[type="submit"] {
 }
 
 .price span {
-
 	font-size: 30px;
 }
 
