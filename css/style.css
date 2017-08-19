@@ -84,26 +84,28 @@ body {
 }
 
 .main-menu > li:hover .sub-menu a {
-	color: black;
+	color: #323232;
 }
 
-.main-menu > li:hover > a {
-	color: black;
-	background-color: white;
+.main-menu > li:hover > a,
+.main-menu > li > a:focus {
+	margin: -7px -13px -8px;
+	padding: 7px 13px 8px;
+	color: #333333;
+	background-color: #f7f6f3;
 	border-radius: 30px;
 	border: none;
-	margin: -5px -13px -8px;
-	padding: 5px 13px 8px;
+	outline: 0;
 }
 
 .main-menu > li > a:active {
-	color: black;
-	background-color: white;
-	border-radius: 30px;
-	border: none;
 	margin: -5px -10px;
 	padding: 5px 10px;
-	box-shadow: inset 0 2px 5px 0 black;
+	color: #333333;
+	background-color: #ededed;;
+	border-radius: 30px;
+	border: none;
+	box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .main-menu .sub-menu {
@@ -115,44 +117,57 @@ body {
 	padding: 0;
 	padding-top: 5px;
 	min-width: 143px;
-	border-radius: 10px;
 	list-style: none;
 }
 
 .sub-menu li {
-	background-color: white;
-}
-
-.sub-menu li hr {
-	margin: 0 5px;
-	color: rgba(255, 255, 255, 0.2);
-	border-color: rgba(255, 255, 255, 0.2);
+	background-color: #f7f6f3;
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .sub-menu a {
 	display: block;
+	padding: 6px 20px 4px;
 	font-size: 14px;
 	text-decoration: none;
 }
 
 .sub-menu .item-bold {
+	padding: 7px 20px;
 	font-weight: 700;
 }
 
+.sub-menu li:first-child::after {
+	display: table;
+	content: "";
+	margin: 0 9px 0 6px;
+	width: 128px;
+	height: 1px;
+	background-color: rgba(50, 50, 50, 0.2);
+}
+
+.sub-menu li:last-child a {
+	padding-bottom: 10px;
+}
+
 .sub-menu li:first-child,
- .sub-menu li:first-child a {	
-	border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ .sub-menu li:first-child a {
+	border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .sub-menu li:last-child,
-.sub-menu li:last-child a {	
-	border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.sub-menu li:last-child a {
+	border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 5px;
 }
 
 .sub-menu a:hover {
-	background-color: yellow;
+	background-color: #fbded7;
+}
+
+.sub-menu a:active {
+	background-color: #f6b5a5;
 }
 
 .header-right .action-button {
@@ -204,7 +219,7 @@ body {
 }
 
 .action-button li:hover {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: #f8f7f4;
 }
 
 .action-button svg {
@@ -224,10 +239,15 @@ body {
 }
 
 .modal {
+	padding-top: 3px;
 	display: none;
 	position: absolute;
-	background: #ffffff;
+}
+
+.modal form {
+	background: #f8f7f4;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .search-form {
@@ -235,47 +255,58 @@ body {
 	top: 32px;
 }
 
-.search-form input {
+.search-form  input {
 	width: 310px;
-	margin: 20px 16px;
-	padding: 13px 12px;
+	margin: 20px 15px;
+	padding: 13px 13px;
 	border: none;
-	border: 1px solid black;
+	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 }
 
 .enter-form {
-	left: -185px;
-	top: 36px;
+	left: -183px;
+	top: 32px;
 	min-height: 215px;
 }
 
 .enter-form input {
-	width: 210px;
+	width: 213px;
 	margin-top: 20px;
 	margin-left: 20px;
 	padding: 13px;
 	border: none;
-	border: 1px solid black;
+	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 }
 
 input[type="submit"] {
-	padding: 12px 22px;
-	width: 50px;
-	color: #ffffff;
-	background-color: red;
-	border-radius: 30px;
+	margin-bottom: 20px;
+	padding: 12px 20px 10px;
+	width: 100px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fefefe;
+	background-image: linear-gradient(to top, #e74a35, #f26843);
+	border: 0;
+	border-radius: 20px;
 	text-decoration:none;
-	text-shadow: 1px 1px 5px #333333;
-	box-shadow: 0 2px 5px #333333;
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+}
+
+.enter-form .registration {
+	margin-top: 18px;
+	margin-left: 18px;
 }
 
 .enter-form .registration a {
+	display: block;
 	padding: 0;
-	font-size: 10px;
-	color: black;
-	border: 1px solid black;
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
+	text-decoration: underline;
 }
 
 .enter-form .half-width {
