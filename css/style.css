@@ -485,14 +485,13 @@ body {
 .sorting  {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .feature-list {
-	max-height: 280px;
+
 }
 
 .features {
@@ -513,14 +512,27 @@ body {
 }
 
 .feature-list .feature-item {
-	margin-top: 22px;
+	display: flex;
+	margin-top: 8px;
 	margin-left: 22px;
-	width: 530px;
+	width: 540px;
 }
 
 .feature-list p {
 	margin: 0;
-	padding-left: 53px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 7px;
+	width: 480px;
+}
+
+.feature-list li::before {
+	display: block;
+	content: "";
+	vertical-align: top;
+	width: 49px;
+	height: 49px;
+	background: url(../img/cow.svg) no-repeat;
 }
 
 .feature-list .short {
@@ -726,11 +738,11 @@ footer .footer-social {
 }
 
 .links-list .heart::before {
-	margin-left: -21px;
-	margin-right: 9px;
 	display: inline-block;
 	content: "";
 	vertical-align: bottom;
+  margin-left: -21px;
+	margin-right: 9px;
 	width: 15px;
 	height: 15px;
 	background-image: url(../img/heart.svg);
