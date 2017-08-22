@@ -226,8 +226,8 @@ body {
 
 .button-item .basket {
 	display: inline-block;
-	padding: 5px 17px 3px 15px;	
-}	
+	padding: 5px 17px 3px 15px;
+}
 
 .basket-full .basket {
 color: black;
@@ -384,10 +384,10 @@ color: black;
 	margin-top: -20px;
 	padding: 0;
 	font-size: 0;
-	list-style: none;	
+	list-style: none;
 }
 
-.breadcrumbs li {	
+.breadcrumbs li {
 	display: inline-block;
 	font-size: 14px;
 	line-height: 16px;
@@ -443,7 +443,7 @@ color: black;
 }
 
 .product-brand {
-	margin: 0;	
+	margin: 0;
 	font-size: 35px;
 	line-height: 41px;
 }
@@ -452,28 +452,29 @@ color: black;
 	width: 850px;
 }
 
-.sort-items .upper {	
+.sort-items .upper {
 	display: block;
 }
 
 .sort-items .select-wrapper {
-	position: relative;		
-	margin-top: 5px;	
-	background: rgba(255, 255, 255, 0.2);		
-	border-radius: 30px;	
+	position: relative;
+	margin-top: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
 }
 
-.select-wrapper select {	
-  padding: 15px 35px 9px 20px;	
+.select-wrapper select {
+  padding: 15px 35px 9px 20px;
 	color: #ffffff;
-	background: transparent;	border: 0;	
+	background-color: transparent;
+	border: 0;
 	appearance: none;
 	-webkit-appearance: none;
-	-moz-appearance: none; 
+	-moz-appearance: none;
 }
 
 .select-wrapper select::-ms-expand{
-    display: none; 
+    display: none;
 }
 
 .select-wrapper option {
@@ -481,13 +482,12 @@ color: black;
 }
 
 .select-wrapper .select-arrow {
-	position: absolute;	
-  right: 0px;
-  bottom:  0; 
-	width: 20px;
-	height: 20px;  
-	background: url(../img/select-arrow.svg) no-repeat;
-	z-index: -1;
+	position: absolute;
+  right: 20px;
+  bottom:  15px;
+	width: 9px;
+	height: 5px;
+	background-image: url(../img/select-arrow.svg);
 }
 
 .sort-items fieldset {
@@ -513,12 +513,12 @@ color: black;
 }
 
 .stock-items .left{
-	background: url(../img/raspberries_bg.jpg) no-repeat;
+	background: #690c21 url(../img/raspberries-bg.jpg) no-repeat;
 	border-radius: 15px;
 }
 
 .stock-items  .right {
-	background: url(../img/shock_bg.jpg) no-repeat;
+	background: #4b3226 url(../img/shock-bg.jpg) no-repeat;
 	border-radius: 15px;
 }
 
@@ -582,10 +582,8 @@ color: black;
 }
 
 .product-item img {
-	border: 0 solid black;
 	border-radius: 50%;
 	overflow: hidden;
-
 }
 
 .hit::before {
@@ -641,8 +639,8 @@ color: black;
 .features {
 	margin-top: 37px;
 	padding-bottom: 20px;
-	color: black;
-	background: url(../img/waffle_bg.jpg);
+	color: #323232;
+	background: #ebddbd url(../img/waffle_bg.jpg);
 	border-radius: 15px;
 }
 
@@ -696,15 +694,16 @@ color: black;
 .advice-block {
 	margin-top: 40px;
 	min-height: 220px;
-	color: #000000;
+	color: #323232;
 }
 
 .blog {
-	background: url(../img/strawberry_bg.jpg) no-repeat;
+	background: #ffffff url(../img/strawberry-bg.jpg) no-repeat;
+	background-position: -25px -225px;
 	border-radius: 15px;
 }
 
-.advice-block .blog b {
+.blog b {
 	display: block;
 	margin-top: 26px;
 	margin-left: 20px;
@@ -722,11 +721,11 @@ color: black;
 }
 
 .blog-info a {
-	color: #000000;
+	color: #5a5a5a;	
 }
 
 .subs-form {
-	background: url(../img/bg-post.svg) no-repeat;
+	background: #f8f7f4 url(../img/bg-post.svg) no-repeat;
 	border-radius: 15px;
 }
 
@@ -753,7 +752,8 @@ color: black;
 	margin-right: 10px;
 	padding: 12px;
 	width: 340px;
-	border: 1px solid #000000;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 	}
 
 .map {
@@ -764,18 +764,18 @@ color: black;
 	margin-top: 40px;
 	width: 1200px;
 	min-height: 430px;
-	background: url(../img/map_bg.jpg) no-repeat;
+	background: #e9e2c6 url(../img/map_bg.jpg) no-repeat;
 }
 
-.map .marker {	
+.map .marker {
 	display: none;
 }
 
-.map-form {	
-	margin-right: 10px;
+.map-form {
+	margin-right: 25px;
 	width: 302px;
 	min-height: 300px;
-	color: #000000;
+	color: #323232;
 	background-color: #ffffff;
 	border-radius: 10px;
 }
@@ -839,7 +839,12 @@ color: black;
 	margin-top: 118px;
 	padding: 0;
 	font-size: 0;
-	list-style: none;	
+	list-style: none;
+}
+
+.disabled svg {
+	transform: rotate(180deg);
+	transform-origin: 50% 50%;
 }
 
 .paginator li {
@@ -850,35 +855,35 @@ color: black;
 	vertical-align: top;
 }
 
-.paginator a {	
+.paginator a {
 	color: #ffffff;
 	text-decoration:none;
 	fill: #ffffff;
 }
 
 .paginator .page:hover {
-	margin: -4px -9px -4px -9px;	
-	padding: 4px 9px;	
+	margin: -4px -9px -4px -9px;
+	padding: 4px 9px;
 	color: #000000;
-	fill: #000000 ;	
+	fill: #000000 ;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
 }
 
-.paginator .active, 
+.paginator .active,
 .paginator .active:hover,
 .paginator .page:active {
 	margin: -4px -9px -4px -9px;
-	padding: 4px 9px;	
+	padding: 4px 9px;
 	color: #000000;
 	background-color: rgb(255, 255, 255);
 	border-radius: 50%;
-} 
+}
 
-.paginator .disabled {	
+.paginator .disabled {
 	fill-opacity: 0.2;
 	pointer-events: none;
-	cursor: default;	
+	cursor: default;
 }
 
 footer {
@@ -886,34 +891,22 @@ footer {
 }
 
 footer .footer-social {
-	margin-top: 37px;
+	margin-top: 35px;
 }
 
 .footer-social .social-btn {
 	display: inline-block;
-	margin-right: 11px;
-	width: 38px;
-	height: 38px;
-	background-color: rgba(255, 255, 255, 0.5);
-	background-repeat: no-repeat;
-	background-position: 3px 3px;
-	border-radius: 50%;
+	margin-right: 7px;
 	vertical-align: top;
 }
 
-.footer-social .social-btn-tw {
-	background-image: url(../img/twitter.svg);
-}
-
-.footer-social .social-btn-inst {
-	background-image: url(../img/instagram.svg);
-}
-.footer-social .social-btn-fb {
-	background-image: url(../img/fb.svg);
-}
-
-.footer-social .social-btn-vk {
-	background-image: url(../img/vk.svg);
+.footer-social svg {
+	width: 32px;
+	height: 32px;
+	fill: #ffffff;
+	fill-opacity: 0.8;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
 }
 
 .footer-links .links-list {
@@ -962,7 +955,7 @@ footer .footer-social {
 }
 
 .copyright-logo a {
-	display: inline-block;	
+	display: inline-block;
 	vertical-align: top;
 	width: 107px;
 	height: 38px;
