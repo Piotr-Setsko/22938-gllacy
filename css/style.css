@@ -12,7 +12,7 @@ body {
 }
 
 
-.wrapper {	
+.wrapper {
 	width: calc(1200px - (1200px*0.046));
 	margin: 0 auto;
 }
@@ -224,7 +224,7 @@ body {
 
 .action-buttons .basket-full {
 	background-color: #f8f7f4;
-	
+
 }
 
 .button-item .basket {
@@ -267,12 +267,12 @@ color: black;
 
 .modal {
 	padding-top: 4px;
-	display: none;	
+	display: none;
 	position: absolute;
 }
 
 .modal form,
-.modal .basket-content {	
+.modal .basket-content {
 	background: #f8f7f4;
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -339,67 +339,67 @@ color: black;
 	display: flex;
 }
 
-.modal .basket-content {	
+.modal .basket-content {
 	margin-left: -423px;
-	padding-top: 10px;		
-	width: 540px;	
+	padding-top: 10px;
+	width: 540px;
 	font-size: 13px;
-	line-height: 16px;	
-	color: black;	
-	min-height: 242px;	
+	line-height: 16px;
+	color: black;
+	min-height: 242px;
 }
 
-.basket-content table {	
-	margin-left: 10px;	
+.basket-content table {
+	margin-left: 10px;
 }
 
 .basket-content td {
-	height: 48px;	
+	height: 48px;
 }
 
-.table-link a{	
+.table-link a{
 display: block;
 	width: 227px;
-	
+
 }
 
 .basket-content span {
 	padding: 0;
 }
 
-.basket-content img {	
+.basket-content img {
 	padding-right: 5px;
-}	
+}
 
 
 .basket-content a {
-	padding:0;	
-	padding-left: 3px; 
+	padding:0;
+	padding-left: 3px;
 	padding-right: 15px;
 	font-weight: 400;
-	color: #000000;	
+	color: #000000;
 }
 
 .basket-content .table-price {
 	padding-left: 5px;
 	width: 93px;
-	text-align: center;	
+	text-align: center;
 }
 
-.basket-content .table-link {		
+.basket-content .table-link {
 	vertical-align: bottom;
 }
 
-.basket-content button {	
+.basket-content button {
 	border: none;
 	background: none;
-	cursor: pointer	
+	cursor: pointer
 }
 
-.basket-content .sum {	
-	vertical-align: bottom;	
-	text-align: right;	
-	height: 45px;	
+.basket-content .sum {
+	vertical-align: bottom;
+	text-align: right;
+	height: 45px;
 	border-top: 1px solid black;
 }
 
@@ -407,7 +407,7 @@ display: block;
 	padding: 0;
 	font-size: 15px;
 	line-height: 18px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 .header-bottom {
@@ -693,7 +693,7 @@ display: block;
 
 .sorting  {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -707,7 +707,7 @@ display: block;
 	border-radius: 15px;
 }
 
-.features .feateres-details{
+.features .feateres-details {
 	margin: 0;
 	padding-top: 27px;
 	padding-left: 22px;
@@ -784,7 +784,7 @@ display: block;
 }
 
 .blog-info a {
-	color: #5a5a5a;		
+	color: #5a5a5a;
 }
 
 .blog-info a:hover,
@@ -964,7 +964,7 @@ footer a:hover:not(.logo-academy),
 footer a:active:not(.logo-academy),
 footer a:focus:not(.logo-academy) {
 	color: #ffbc9e;
-	border-bottom-color: rgba(255, 188, 158, 0.3);	
+	border-bottom-color: rgba(255, 188, 158, 0.3);
 	outline: none;
 }
 
@@ -987,17 +987,36 @@ footer .footer-social {
 	border-radius: 50%;
 }
 
+.social-btn:hover svg,
+.social-btn:focus svg {
+	fill: #ffffff;
+	fill-opacity: 1;
+	border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn:active svg {
+	fill: #ffffff;
+	fill-opacity: 1;
+	border: 3px solid rgba(255, 255, 255, 0.7);
+	box-shadow: 0 2px 1px 0 #888888;
+}
+
 .footer-links .links-list {
 	margin-top: 29px;
-	margin-left: 20px;
-	min-width: 330px;
-	max-height: 50px;
+	margin-left: 43px;
+	width: 350px;
 	font-size: 13px;
 	line-height: 18px;
 }
 
 .links-list li {
-	margin-top: 5px;
+	display: block;
+	width: 170px;
+	margin-top: 2px;
+}
+
+.links-list li:nth-child(2n) {
+	margin-left: -25px;
 }
 
 .links-list a {
@@ -1029,7 +1048,7 @@ footer .footer-social {
 
 .copyright .copyright-logo {
 	margin-top: 23px;
-	margin-left: 3px;	
+	margin-left: 3px;
 }
 
 .copyright-logo a {
