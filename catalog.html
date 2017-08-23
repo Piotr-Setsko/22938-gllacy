@@ -11,7 +11,7 @@
   }
 
   BODY {
-		opacity: 1;
+		opacity: 0.7;
   }
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -92,32 +92,36 @@
 							<span class="visually-hidden">Корзина</span>
 							<span>2 товара</span>
 						</a>
-					<div class="modal basket-content">
+					<div class="modal">
+					<div class="basket-content">
 					<table>
 						<tr>
-							<td><button class="cross-btn">
-								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-							</button></td>
-							<td><img src="#" width="#" height="#" alt="Пломбир"></td>
+							<td>
+								<button class="cross-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 	4.772.708-.708L6.207 5.5z"/></svg>
+								</button>
+							</td>
+							<td><img src="img/1.jpg" width="33" height="33" alt="Пломбир"></td>
 							<td><a href="#">Пломбир с апельсиновым джемом</a></td>
-							<td>1,5кг x <span class="price-basket">200 руб.</span></td>
-							<td>300 руб.</td>
+							<td>1,5кг x <span class="price-unit">200 руб.</span></td>
+							<td><span class="table-price">300 руб.</span></td>
 						</tr>
 						<tr>
 							<td><button class="cross-btn">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
 							</button></td>
-							<td><img src="#" width="#" height="#" alt="Клубничный пломбир"></td>
-							<td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-							<td>1,5кг x <span class="price-basket">300 руб.</span></td>
-							<td>450 руб.</td>
+							<td><img src="img/3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
+							<td class="table-link"> <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+							<td>1,5кг x <span class="price-unit">300 руб.</span></td>
+							<td><span class="table-price">450 руб.</span></td>
 						</tr>
 						<tr>
-							<td class="sum" colspan="4"><b>Итого: 750 руб.</b></td>
+							<td class="sum" colspan="5"><b>Итого: 750 руб.</b></td>
 						</tr>
 					</table>
 					<div class="btn order-form">
 						<a class="btn" href="">Оформить заказ</a>
+					</div>
 					</div>
 				</div>
 			</li>
@@ -221,7 +225,6 @@
 				</div>
 				<p>
 					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-
 				</p>
 				<div class="product-view">
 					<a class="btn product-view" href="#">Быстрый просмотр</a>
