@@ -3,6 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин мороженого «Глейси»</title>	
+	<style>
+		html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "gllacy-index-1200.jpg" );
+  }
+
+  BODY {
+		opacity: 1;
+  }
+	</style>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -145,7 +156,7 @@
 					<p>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</p>
-					<div class="product-view">
+					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
@@ -155,7 +166,7 @@
 					<p>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</p>
-					<div class="product-view">
+					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
@@ -165,7 +176,7 @@
 					<p>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</p>
-					<div class="product-view">
+					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
@@ -175,7 +186,7 @@
 					<p>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</p>
-					<div class="product-view">
+					<div class="btn-product">
 						<a class="btn product-view" href="#">Быстрый просмотр</a>
 					</div>
 				</div>
@@ -215,7 +226,7 @@
 						<div class="subs-email">
 							<form action="/echo" method="post">
 								<label class="visually-hidden" for="subscription-email">Электронная почта для рассылки</label>
-								<input type="email" name="subscription-email" id="subscription-email" value="Электронная почта">
+								<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
 								<button class="btn" type="submit" name="send-email">Отправить</button>
 							</form>
 						</div>
