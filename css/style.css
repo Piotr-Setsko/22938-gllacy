@@ -1,4 +1,4 @@
-body {
+﻿body {
   min-width: 900px;
 	height: 100%;
 	margin: 0;
@@ -506,11 +506,7 @@ color: black;
 }
 
 .slider {
-<<<<<<< HEAD
-	margin-top: -118px;
-=======
 	margin-top: -120px;	
->>>>>>> 5c2486aa34192e1a79b7229eb19e8503c8f7af70
 }
 
 .slider-top {
