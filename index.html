@@ -2,7 +2,18 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Магазин мороженого «Глейси»</title>	
+	<title>Магазин мороженого «Глейси»</title>
+<style>
+		html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "gllacy-index-1200.jpg" );
+  }
+
+  BODY {
+		opacity: 1;
+  }
+	</style>	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -98,30 +109,43 @@
 	<main>
 		<div class="wrapper">
 			<div class="slider">
-				<div class="slider-top">
-					<figure class="slider-slides">
+				<div class="slider-top">				
+						<input type="radio" id="btn-1" name="toggle" checked>
+						<input type="radio" id="btn-2" name="toggle">
+						<input type="radio" id="btn-3" name="toggle">      					
+				<div class="slider-slides">
+					<figure class="slide-1">
 						<img src="img/ice_slider_1_lg.png" width="1045" height="881" alt="Крем-брюле и пломбир">
 						<figcaption class="slider-tagline">
 							Крем-брюле и пломбир с малиновым джемом
 						</figcaption>
 					</figure>
-				</div>
-				<div class="slider-bottom">
-					<div class="btn-slider">
-						<a class="btn order" href="#">Давайте оба!</a>
-					</div>
-					<div class="slider-control">
-						<input type="radio" id="btn-1" name="toggle" checked>
-						<input type="radio" id="btn-2" name="toggle">
-						<input type="radio" id="btn-3" name="toggle">
-        		<div class="slider-desc">
+					<figure class="slide-2">
+						<img src="img/ice_slider_2_lg.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+						<figcaption class="slider-tagline">
+							Шоколадный пломбир и лимонный сорбет
+						</figcaption>
+					</figure>
+					<figure class="slide-3">
+						<img src="img/ice_slider_3_lg.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+						<figcaption class="slider-tagline">
+							Пломбир с помадкой и клубничный щербет
+						</figcaption>
+					</figure>
+				</div>	
+			<div class="slider-desc">
            		<label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
            		<label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
            		<label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
-         		</div>
+         		</div>						
 					</div>
-				</div>
-			</div>
+					
+					</div>
+					<div class="slider-bottom">
+					<div class="btn-slider">
+						<a class="btn order" href="#">Давайте оба!</a>
+					</div>
+				</div>			
 			<section class="stock-items flex">
 				<article class="stock-item left">
 					<h3 class="stock-name">Малинка даром!</h3>
