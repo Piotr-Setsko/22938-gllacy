@@ -506,16 +506,24 @@ color: black;
 }
 
 .slider {
-	margin-top: -118px;	
+	margin-top: -120px;	
 }
 
- .slider-top .slider-slides {
-	margin: 0 auto;
+.slider-top {
+	position: relative;
+	overflow: hidden;		
+}
+
+.slider-top figure {	
 	width: 1045px;
+	height: 881px;	
+	margin: 0 auto;
 }
 
-.slider img {
-
+ .slider-top .slider-slides {	
+ display: flex;
+	width: 300%;
+	transition: transform 0.8s ease;	
 }
 
 .slider-top .slider-tagline {
@@ -528,8 +536,7 @@ color: black;
 	text-align: center;
 }
 
-.slider-bottom .btn-slider {
-	 margin-top: 30px;
+.slider-bottom .btn-slider {	 
 	 text-align: center;
  }
 
@@ -538,6 +545,68 @@ color: black;
 	font-size: 32px;
 	line-height: 44px;
  }
+ 
+.slider-control {
+	margin-top: -43px;
+}
+  
+ input[type=radio] { 
+ display: none; 
+ }
+ 
+ .slider-desc label {
+	display: inline-block;
+	content:'';
+	
+	margin-right: 2px;
+	width: 18px;
+	height: 18px;	
+	background-color: rgba(255, 255, 255, 0);
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	vertical-align: top;
+	cursor: pointer;
+ } 
+  
+#btn-1:checked ~ .slider-desc label[for="btn-1"],
+#btn-2:checked ~ .slider-desc label[for="btn-2"],
+#btn-3:checked ~ .slider-desc label[for="btn-3"]  {	
+	background-color: rgba(255, 255, 255, 1);	
+}
+
+#btn-1:checked ~ .slider-slides {
+	transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-slides {
+	transform: translate(-1150px);
+}
+
+#btn-3:checked ~ .slider-slides {
+	transform: translate(-2280px);
+}
+
+ .slider-desc label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+ 
+ /*.slider-desc label {
+	display: inline-block;
+	content:'';
+	width: 25px;
+	height: 25px;
+	opacity: 0.5;
+	background-image: url(../img/radio-off.svg);	
+	vertical-align: top;
+	cursor: pointer;
+ } 
+  
+#btn-1:checked ~ .slider-desc label[for="btn-1"],
+#btn-2:checked ~ .slider-desc label[for="btn-2"],
+#btn-3:checked ~ .slider-desc label[for="btn-3"]  {
+	opacity: 1;
+	background-image: url(../img/radio-on.svg);
+}*/
 
 .flex {
 	display: flex;
@@ -606,7 +675,7 @@ color: black;
 
 .stock-items {
 	position: relative;
-	margin-top: 18px;
+	margin-top: 60px;
 	min-height: 230px;
 	z-index: 1;
 }
