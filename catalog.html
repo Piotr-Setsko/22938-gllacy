@@ -2,13 +2,24 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Сливочное мороженое - Магазин мороженого «Глейси»</title>		
+	<title>Сливочное мороженое - Магазин мороженого «Глейси»</title>	
+<style>
+	html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "gllacy-catalog-1200.jpg" );
+  }
+
+  BODY {
+		opacity: 0.7;
+  }	
+	</style>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header wrapper">
+	<header class="main-header content-wrapper">
 		<div class="header-top">
 			<div class="header-left">
 				<div class="header-logo">
@@ -126,7 +137,7 @@
 			</div>
 		</div>
 	</header>
-	<main class="wrapper">
+	<main class="content-wrapper">
 		<ol class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
@@ -135,7 +146,7 @@
 		<h1 class="product-brand">Сливочное мороженое</h1>
 		<section class="sort-form">
 			<form action="/echo" method="post">
-				<div class="sort-section flex">
+				<div class="sort-section">
 				<div class="sort-items">
 					<label class="upper" for="kind-sort">Сортировка:</label>
 					<div class="select-wrapper">
@@ -148,28 +159,33 @@
 					<div class="select-arrow"></div>
 					</div>
 				</div>
-				<div class="sort-items">
+				<div class="sort-items">				
 					<label class="upper" for="price">Цена:</label>
+					<div class="form-wrapper">
 					<input type="range" name="price" id="price" min="0" max="800" step="100" value="100">
+					</div>
 				</div>
 				<div class="sort-items">
 					<fieldset>
 						<legend>Жирность:</legend>
+						<div class="form-wrapper fat-content">
 						<input type="radio" name="fat" id="zero" value="0">
 						<label for="zero">0%</label>
 						<input type="radio" name="fat" id="ten" value="10" checked>
-						<label for="ten">10%</label>
+						<label for="ten">до 10%</label>
 						<input type="radio" name="fat" id="thirty" value="30">
-						<label for="thirty">30%</label>
+						<label for="thirty">до 30%</label>
 						<input type="radio" name="fat" id="more" value="more">
 						<label for="more">выше 30%</label>
+						</div>
 					</fieldset>
 				</div>
 				</div>
-				<div class="sort-section flex">
+				<div class="sort-section">
 				<div class="sort-items">
 					<fieldset>
 						<legend>Наполнители:</legend>
+						<div class="form-wrapper fillers">
 						<input type="checkbox" name="shock" id="shock" checked>
 						<label for="shock">шоколадные</label>
 						<input type="checkbox" name="shugar" id="shugar" checked>
@@ -180,10 +196,11 @@
 						<label for="syrup">сиропы</label>
 						<input type="checkbox" name="jam" id="jam">
 						<label for="jam">джемы</label>
+						</div>
 					</fieldset>
 				</div>
 				<div class="sort-items">
-					<button class="button" type="submit">Применить</button>
+					<button class="sort-button" type="submit">Применить</button>
 				</div>
 				</div>
 			</form>
@@ -331,7 +348,7 @@
 			</li>
 		</ol>
 	</main>
-	<footer class="wrapper flex">
+	<footer class="content-wrapper flex">
 		<section class="footer-social">
 			<a class="social-btn social-btn-tw"  href="#">
 			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
