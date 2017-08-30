@@ -493,7 +493,7 @@ color: black;
 
 .breadcrumbs {
 	margin: 0;
-	margin-top: -20px;
+	margin-top: -18px;
 	padding: 0;
 	font-size: 0;
 	list-style: none;
@@ -554,7 +554,7 @@ color: black;
 
 .slider-controls {
 	position: absolute;
-	bottom: 25px;
+	bottom: 22px;
 	left: 0;
 	z-index: 1;
 	font-size: 0;
@@ -636,12 +636,12 @@ color: black;
 }
 
 .sort-items {
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 .form-wrapper {
-	margin-top: 5px;
-	padding: 8px 6px 5px 13px;
+	margin-top: 4px;
+	padding: 7px 6px 6px 13px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 }
@@ -649,7 +649,7 @@ color: black;
 .form-wrapper label {
 	margin: 0;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 18px;	
 	vertical-align: middle;
 }
 
@@ -658,18 +658,19 @@ color: black;
 	position: relative;
 	margin-top: 5px;
 	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 30px;
+	border-radius: 30px;	
 	z-index: 1;
 }
 
 .select-wrapper select {
-  padding: 9px 40px 9px 16px;
+  padding: 8px 35px 7px 13px;	
+	font-weight: 600;
 	color: #ffffff;
 	background-color: transparent;
 	border: 0;
 	appearance: none;
 	-webkit-appearance: none;
-	-moz-appearance: none;
+	-moz-appearance: none;	
 }
 
 .select-wrapper select::-ms-expand{
@@ -680,14 +681,25 @@ color: black;
 	color: #000000;
 }
 
-.select-arrow svg {
+.select-arrow svg {	
 	position: absolute;
 	top: 15px;
 	right: 15px;
 	width: 9px;
 	height: 5px;
 	fill: #ffffff;
-	z-index: -1;
+	z-index: -1;	
+}
+
+.select-wrapper:hover select {	
+	color: #000000;
+	background-color: #ffffff;	
+	border-radius: 30px;	
+}
+
+.select-wrapper:hover svg {
+	fill: #000000;
+	z-index: 0;	
 }
 
 .range-filter {
@@ -711,7 +723,7 @@ color: black;
   font-weight: 600;
 	color: #ffffff;
 	text-align: center;
-	background: inherit;
+	background: #849d8f;
 	border: none;
 }
 
@@ -731,7 +743,6 @@ color: black;
 }
 
 .range-controls .scale {
-
 	margin-top: 17px;
 	height: 4px;
   background: rgba(255, 255, 255, 0.5);
@@ -768,7 +779,7 @@ color: black;
 
 .sort-items fieldset {
 	padding: 0;
-	margin-top: 5px;
+	margin-top: 4px;
 	border: none;
 }
 
@@ -828,7 +839,7 @@ input[type="checkbox"]:checked + label::before {
 
 .sort-button {
 	display: block;
-	margin-top: 20px;
+	margin-top: 25px;
 	padding: 8px 25px;
 	font-size: 16px;
 	line-height: 18px;
@@ -895,9 +906,9 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .stock-item .btn-stock{
-	margin-top: 45px;
+	margin-top: 46px;
 	margin-bottom: 25px;
-	margin-right: 20px;
+	margin-right: 21px;
 	vertical-align: top;
 	text-align: right;
 }
@@ -962,7 +973,8 @@ input[type="checkbox"]:checked + label::before {
 .product-item p {
 	text-align: center;
 	margin: 0;
-	margin-top: 15px;
+	margin-top: 20px;
+	width: 258px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -1006,7 +1018,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .features {
-	margin-top: 42px;
+	margin-top: 38px;
 	padding-bottom: 20px;
 	color: #323232;
 	background: #ebddbd url(../img/waffle_bg.jpg);
@@ -1032,7 +1044,7 @@ input[type="checkbox"]:checked + label::before {
 
 .feature-list p {
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 11px;
 	margin-left: 7px;
 	width: 480px;
 }
@@ -1061,7 +1073,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .advice-block {
-	margin-top: 38px;
+	margin-top: 37px;
 	min-height: 220px;
 	color: #323232;
 }
@@ -1152,7 +1164,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .map-form {
-	margin-top: 65px;
+	margin-top: 63px;
 	margin-right: 25px;
 	width: 302px;
 	min-height: 200px;
@@ -1218,7 +1230,7 @@ input[type="checkbox"]:checked + label::before {
 	display: flex;
 	justify-content: flex-end;
 	margin: 0;
-	margin-top: 118px;
+	margin-top: 87px;
 	margin-bottom: 34px;
 	padding: 0;
 	font-size: 0;
@@ -1340,7 +1352,7 @@ footer .footer-social {
 }
 
 .footer-links .links-list {
-	margin-top: 34px;
+	margin-top: 32px;
 	margin-left: 43px;
 	width: 350px;
 	font-size: 13px;
