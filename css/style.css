@@ -1,4 +1,14 @@
-﻿body {
+/**,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}*/
+
+body {
   min-width: 900px;
 	height: 100%;
 	margin: 0;
@@ -6,7 +16,7 @@
   font-weight: 400;
 	font-size: 16px;
   line-height: 22px;
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	color: #ffffff;
 	background-color: #849d8f;
 }
@@ -77,18 +87,60 @@
   box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
 }
 
-.placeholder input {	
-	
+.placeholder input {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	box-sizing: border-box;
 }
 
-.placeholder input:hover {	
-	box-sizing: border-box;	
-	border: 2px solid #d3d3d2;
-	/*min-height*/	
+.placeholder label {
+	display: none;
 }
 
-.placeholder input:focus {
-	border: 1px solid red;	
+.placeholder input::placeholder {
+	color: #999999;
+}
+
+.placeholder input:hover {
+	padding-top: 10px;
+	padding-left: 12px;
+	border: 2px solid rgba(154, 154, 154, 0.52)
+}
+
+.placeholder input:focus::placeholder {
+	color: transparent;
+}
+
+.placeholder input[required]:focus:invalid {
+	border: 2px solid rgba(46, 136, 228, 0.52);
+	outline: none;
+}
+
+.placeholder input[required]:focus:invalid + label {
+	position: absolute;
+	top: 5px;
+	left: 29px;
+	display: block;
+	color: #5b9ddf;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.placeholder input[required]:focus:valid + label{
+	position: absolute;
+	top: 5px;
+	left: 29px;
+	display: block;
+	color: #999999;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.placeholder input:valid {
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	outline: none;
 }
 
 .header-top {
@@ -351,12 +403,12 @@ color: black;
 	margin-left: -310px;
 }
 
-.search-form  input {	
-	width: 310px;
+.search-form  input {
 	margin: 20px 15px;
-	padding: 13px 13px;
-	border: none;
-	border: 1px solid #d3d3d2;
+	padding: 10px 13px;
+  width: 310px;
+  height: 44px;
+	border: 1px solid rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
 }
 
@@ -663,7 +715,7 @@ color: black;
 .form-wrapper label {
 	margin: 0;
 	font-size: 16px;
-	line-height: 18px;	
+	line-height: 18px;
 	vertical-align: middle;
 }
 
@@ -672,19 +724,19 @@ color: black;
 	position: relative;
 	margin-top: 5px;
 	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 30px;	
+	border-radius: 30px;
 	z-index: 1;
 }
 
 .select-wrapper select {
-  padding: 8px 35px 7px 13px;	
+  padding: 8px 35px 7px 13px;
 	font-weight: 600;
 	color: #ffffff;
 	background-color: transparent;
 	border: 0;
 	appearance: none;
 	-webkit-appearance: none;
-	-moz-appearance: none;	
+	-moz-appearance: none;
 }
 
 .select-wrapper select::-ms-expand{
@@ -695,25 +747,25 @@ color: black;
 	color: #000000;
 }
 
-.select-arrow svg {	
+.select-arrow svg {
 	position: absolute;
 	top: 15px;
 	right: 15px;
 	width: 9px;
 	height: 5px;
 	fill: #ffffff;
-	z-index: -1;	
+	z-index: -1;
 }
 
-.select-wrapper:hover select {	
+.select-wrapper:hover select {
 	color: #000000;
-	background-color: #ffffff;	
-	border-radius: 30px;	
+	background-color: #ffffff;
+	border-radius: 30px;
 }
 
 .select-wrapper:hover svg {
 	fill: #000000;
-	z-index: 0;	
+	z-index: 0;
 }
 
 .range-filter {
@@ -1457,15 +1509,15 @@ footer .footer-social {
 	justify-content: space-between;
 }
 
-.modal-feedback p {	
+.modal-feedback p {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0;	
+	margin: 0;
 }
 
-.modal-feedback .cross-btn {	
+.modal-feedback .cross-btn {
 	background-color: #f8f7f4;
-	border: none;	
+	border: none;
 }
 
 .modal-feedback input,
@@ -1474,14 +1526,14 @@ footer .footer-social {
 }
 
 .modal-feedback input,
-.modal-feedback textarea {	
+.modal-feedback textarea {
 	margin: 20px 0;
 	border: none;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 }
 
-.modal-feedback .feedback-btn {	
+.modal-feedback .feedback-btn {
 	text-align: right;
 }
 
@@ -1490,7 +1542,7 @@ footer .footer-social {
 }
 
 .modal-feedback input:focus::placeholder,
-.modal-feedback textarea:focus::placeholder{	
+.modal-feedback textarea:focus::placeholder{
 	color: transparent;
 }
 
@@ -1499,11 +1551,11 @@ footer .footer-social {
 }
 
 .modal-feedback input:focus + label,
-.modal-feedback textarea:focus + label {	
+.modal-feedback textarea:focus + label {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	display: block;	
+	display: block;
 	color: blue;
 	font-size: 10px;
 	line-height: 12px;

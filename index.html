@@ -10,7 +10,7 @@
 <body>
 	<input type="radio" id="btn-1" name="toggle" checked>
 	<input type="radio" id="btn-2" name="toggle">
-	<input type="radio" id="btn-3" name="toggle">      
+	<input type="radio" id="btn-3" name="toggle">
 	<div class="site-wrapper">
 		<header class="main-header content-wrapper">
 			<div class="header-top">
@@ -50,9 +50,9 @@
 							</a>
 							<div class="modal search-form">
 								<form action="/echo" method="post">
-									<div class="placeholder">									
-										<input type="search" name="search" id="search" placeholder="Что ищем?">
-										<label class="visually-hidden" for="search">Поиск</label>
+									<div class="placeholder">
+										<input type="text" name="search" id="search" placeholder="Что ищем?" required>
+										<label for="search">Что ищем?</label>
 									</div>
 								</form>
 							</div>
@@ -115,18 +115,18 @@
 							Шоколадный пломбир и лимонный сорбет
 						</div>
 						<a class="btn order" href="#">Давайте оба!</a>
-					</div>	
+					</div>
 					<div class="slide" id="slide3">
 						<div class="slide-tagline">
 							Пломбир с помадкой и клубничный щербет
 						</div>
 						<a class="btn order" href="#">Давайте оба!</a>
-					</div>	
+					</div>
 					<div class="slider-controls">
 						<label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
            	<label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
            	<label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
-         	</div>		
+         	</div>
 				</div>
 				<section class="stock-items flex">
 					<article class="stock-item left">
@@ -278,31 +278,31 @@
 				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
 			</section>
 		</footer>
-	</div>	
+	</div>
 		<section class="modal-feedback">
 			<form action="/echo" method="post">
-				<div class="feedback-top">	
-					<p>Мы обязательно вам ответим</p>					
-					<button class="cross-btn">				
+				<div class="feedback-top">
+					<p>Мы обязательно вам ответим</p>
+					<button class="cross-btn">
 						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
 					</button>
 				</div>
-				<div class="placeholder">		
-					<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">				
-					<label for="user-name">Как вас зовут?</label>		
+				<div class="placeholder">
+					<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+					<label for="user-name">Как вас зовут?</label>
 				</div>
-				<div class="placeholder">	
+				<div class="placeholder">
 					<input type="text" name="user-mail" id="user-mail" placeholder="Ваша почта для ответа?">
-					<label for="user-mail">Ваша почта для ответа?</label>	
+					<label for="user-mail">Ваша почта для ответа?</label>
 				</div>
 				<div class="placeholder">
 					<textarea id="user-text" cols="40" rows="10" placeholder="Напишите что нибудь..."></textarea>
 					<label for="user-text">Напишите что нибудь...</label>
-				</div>	
+				</div>
 				<div class="feedback-btn">
-					<button class="btn" type="submit" name="send-email">Отправить</button>				
-				</div>	
+					<button class="btn" type="submit" name="send-email">Отправить</button>
+				</div>
 			</form>
-		</section>	
+		</section>
 </body>
 </html>
