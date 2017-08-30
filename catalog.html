@@ -81,42 +81,44 @@
 							<span class="visually-hidden">Корзина</span>
 							<span>2 товара</span>
 						</a>
-					<div class="modal">
-					<div class="basket-content">
-					<table class="basket-table">
-						<tr>
-							<td>
-								<button class="cross-btn">
-								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 	4.772.708-.708L6.207 5.5z"/></svg>
-								</button>
-							</td>
-							<td><img src="img/1.jpg" width="33" height="33" alt="Пломбир"></td>
-							<td><a href="#">Пломбир с апельсиновым джемом</a></td>
-							<td>1,5кг x <span class="price-unit">200 руб.</span></td>
-							<td><span class="table-price">300 руб.</span></td>
-						</tr>
-						<tr>
-							<td><button class="cross-btn">
-								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-							</button></td>
-							<td><img src="img/3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
-							<td class="table-link"> <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-							<td>1,5кг x <span class="price-unit">300 руб.</span></td>
-							<td><span class="table-price">450 руб.</span></td>
-						</tr>
-						<tr>
-							<td class="line" colspan="5"></td>
-						<tr>
-						<tr>
-							<td class="sum" colspan="5"><b>Итого: 750 руб.</b></td>
-						</tr>
-					</table>
-					<div class="order-form">
-						<a class="btn" href="#">Оформить заказ</a>
-					</div>
-					</div>
-				</div>
-			</li>
+						<div class="modal">
+							<div class="basket-content">
+								<table class="basket-table">
+									<tr>
+										<td>
+											<button class="cross-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 	4.772.708-.708L6.207 5.5z"/></svg>
+											</button>
+										</td>
+										<td><img src="img/1.jpg" width="33" height="33" alt="Пломбир"></td>
+										<td><a href="#">Пломбир с апельсиновым джемом</a></td>
+										<td>1,5кг x <span class="price-unit">200 руб.</span></td>
+										<td><span class="table-price">300 руб.</span></td>
+									</tr>
+									<tr>
+										<td>
+											<button class="cross-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+											</button>
+										</td>
+										<td><img src="img/3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
+										<td class="table-link"> <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+										<td>1,5кг x <span class="price-unit">300 руб.</span></td>
+										<td><span class="table-price">450 руб.</span></td>
+									</tr>
+									<tr>
+										<td class="line" colspan="5"></td>
+									</tr>
+									<tr>
+										<td class="sum" colspan="5"><b>Итого: 750 руб.</b></td>
+									</tr>
+								</table>
+								<div class="order-form">
+									<a class="btn" href="#">Оформить заказ</a>
+								</div>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -136,67 +138,67 @@
 		<section class="sort-form">
 			<form action="/echo" method="post">
 				<div class="sort-section">
-				<div class="sort-items">
-					<label class="upper" for="kind-sort">Сортировка:</label>
-					<div class="select-wrapper">
-					<select name="kind-sort" id="kind-sort">
-						<option value="popularity">по популярности</option>
-						<option value="cheap">сначала дешевые</option>
-						<option value="expensive">сначала дорогие</option>
-						<option value="fat">по жирности</option>
-					</select>
-					<div class="select-arrow">
-						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"><path d="M4.5 5L0 0h9z"/></svg>
-					</div>
-					</div>
-				</div>
-				<div class="range-filter">
-					<div class="price-controls">
-						<label for="price">Цена:</label>
-						<input class="min-price" type="text" value="100"><span>руб. ‒</span>
-						<input class="max-price" type="text" value="500"><span>руб.</span>
-					</div>
-					<div class="range-controls">
-						<div class="scale"><div class="bar"></div></div>
-					</div>
-				</div>
-				<div class="sort-items">
-					<fieldset>
-						<legend>Жирность:</legend>
-						<div class="form-wrapper fat-content">
-						<input type="radio" name="fat" id="zero" value="0">
-						<label for="zero">0%</label>
-						<input type="radio" name="fat" id="ten" value="10" checked>
-						<label for="ten">до 10%</label>
-						<input type="radio" name="fat" id="thirty" value="30">
-						<label for="thirty">до 30%</label>
-						<input type="radio" name="fat" id="more" value="more">
-						<label for="more">выше 30%</label>
+					<div class="sort-items">
+						<label class="upper" for="kind-sort">Сортировка:</label>
+						<div class="select-wrapper">
+							<select name="kind-sort" id="kind-sort">
+								<option value="popularity">по популярности</option>
+								<option value="cheap">сначала дешевые</option>
+								<option value="expensive">сначала дорогие</option>
+								<option value="fat">по жирности</option>
+							</select>
+							<div class="select-arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"><path d="M4.5 5L0 0h9z"/></svg>
+							</div>
 						</div>
-					</fieldset>
-				</div>
+					</div>
+					<div class="range-filter">
+						<div class="price-controls">
+							<label for="price">Цена:</label>
+							<input class="min-price" type="text" value="100"><span>руб. ‒</span>
+							<input class="max-price" type="text" value="500"><span>руб.</span>
+						</div>
+						<div class="range-controls">
+							<div class="scale"><div class="bar"></div></div>
+						</div>
+					</div>
+					<div class="sort-items">
+						<fieldset>
+							<legend>Жирность:</legend>
+							<div class="form-wrapper fat-content">
+								<input type="radio" name="fat" id="zero" value="0">
+								<label for="zero">0%</label>
+								<input type="radio" name="fat" id="ten" value="10" checked>
+								<label for="ten">до 10%</label>
+								<input type="radio" name="fat" id="thirty" value="30">
+								<label for="thirty">до 30%</label>
+								<input type="radio" name="fat" id="more" value="more">
+								<label for="more">выше 30%</label>
+							</div>
+						</fieldset>
+					</div>
 				</div>
 				<div class="sort-section">
-				<div class="sort-items">
-					<fieldset>
-						<legend>Наполнители:</legend>
-						<div class="form-wrapper fillers">
-						<input type="checkbox" name="shock" id="shock" checked>
-						<label for="shock">шоколадные</label>
-						<input type="checkbox" name="shugar" id="shugar" checked>
-						<label for="shugar">сахарные присыпки</label>
-						<input type="checkbox" name="fruit" id="fruit">
-						<label for="fruit">фрукты</label>
-						<input type="checkbox" name="syrup" id="syrup">
-						<label for="syrup">сиропы</label>
-						<input type="checkbox" name="jam" id="jam">
-						<label for="jam">джемы</label>
-						</div>
-					</fieldset>
-				</div>
-				<div class="sort-items">
-					<button class="sort-button" type="submit">Применить</button>
-				</div>
+					<div class="sort-items">
+						<fieldset>
+							<legend>Наполнители:</legend>
+							<div class="form-wrapper fillers">
+								<input type="checkbox" name="shock" id="shock" checked>
+								<label for="shock">шоколадные</label>
+								<input type="checkbox" name="shugar" id="shugar" checked>
+								<label for="shugar">сахарные присыпки</label>
+								<input type="checkbox" name="fruit" id="fruit">
+								<label for="fruit">фрукты</label>
+								<input type="checkbox" name="syrup" id="syrup">
+								<label for="syrup">сиропы</label>
+								<input type="checkbox" name="jam" id="jam">
+								<label for="jam">джемы</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="sort-items">
+						<button class="sort-button" type="submit">Применить</button>
+					</div>
 				</div>
 			</form>
 		</section>
@@ -346,7 +348,7 @@
 	<footer class="content-wrapper flex">
 		<section class="footer-social">
 			<a class="social-btn social-btn-tw"  href="#">
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
 				<span class="visually-hidden">Твитер</span></a>
 			<a class="social-btn social-btn-inst" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
