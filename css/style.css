@@ -99,7 +99,7 @@ body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 400;	
+	font-weight: 400;
 	box-sizing:	border-box;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .placeholder input[required]:focus:invalid,
 .placeholder textarea[required]:focus:invalid {
-	border: 2px solid rgba(46, 136, 228, 0.52);	
+	border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 .placeholder input[required]:focus:invalid + label,
@@ -142,7 +142,7 @@ body {
 	display: block;
 	color: #5b9ddf;
 	font-size: 11px;
-	line-height: 13px;	
+	line-height: 13px;
 }
 
 
@@ -161,7 +161,7 @@ body {
 .placeholder textarea:valid {
 	padding-top: 11px;
 	padding-left: 13px;
-	border: 1px solid rgba(178, 178, 178, 0.52);	
+	border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 .header-top {
@@ -309,7 +309,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-.sub-menu .sub-active {	
+.sub-menu .sub-active {
 	background-color: #d07058;
 }
 
@@ -427,7 +427,7 @@ color: black;
 .search-form  input {
 	margin: 20px 15px;
 	padding: 10px 13px;
-  width: 311px; 
+  width: 311px;
 	height: 44px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
@@ -460,7 +460,7 @@ color: black;
 
 .enter-form .registration {
 	margin-top: 18px;
-	
+
 }
 
 .registration a {
@@ -832,8 +832,8 @@ color: black;
 .range-controls {
 	position: relative;
 	margin-top: 4px;
-	padding: 0 22px;	
-	height: 37px;	
+	padding: 0 22px;
+	height: 37px;
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 	overflow: hidden;
@@ -952,17 +952,17 @@ input[type="checkbox"]:checked + label::before {
 .sort-button:hover,
 .sort-button:focus {
 	padding: 10px 27px;
-	color: #323232;	
+	color: #323232;
 	background-color: rgba(255, 255, 255, 1);
 	border: none;
 }
 
 .sort-button:active {
 	padding: 10px 27px;
-	color: #323232;	
+	color: #323232;
 	background-color: #ededed;
 	border: none;
-  box-shadow: inset 0px 2px 1px 0 #696969;	
+  box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .stock-item,
@@ -1239,14 +1239,14 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 16px;
 }
 
-.subs-email input {	
+.subs-email input {
 	margin-top: 20px;
 	margin-left: 21px;
 	padding: 9px 13px;
 	width: 368px;
 	height: 44px;
 	font-size: 16px;
-	line-height: 24px;	
+	line-height: 24px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
 }
@@ -1530,12 +1530,12 @@ footer .footer-social {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.modal-feedback {	
+.modal-feedback {
 	display: none;
 	position: absolute;
 	top: 50%;
 	right: 40%;
-	width: 478px;	
+	width: 478px;
 	height: 443px;
 	background: #f8f7f4;
 	border-radius: 5px;
@@ -1560,14 +1560,14 @@ footer .footer-social {
 	color: #323232;
 }
 
-.modal-feedback .cross-btn {	
+.modal-feedback .cross-btn {
 	background-color: #f8f7f4;
-	border: none;	
-	margin-right: -5px;	
+	border: none;
+	margin-right: -5px;
 
 }
 
-.modal-feedback input {	
+.modal-feedback input {
 	margin-top: 20px;
 	margin-left: 24px;
 	padding: 9px 13px;
@@ -1580,10 +1580,10 @@ footer .footer-social {
 
 .modal-feedback textarea {
 	margin: 20px 24px;
-	padding: 10px 13px;	
+	padding: 10px 13px;
 	width: 428px;
 	height: 155px;
-	font-size: 16px;	
+	font-size: 16px;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 }
@@ -1592,5 +1592,3 @@ footer .footer-social {
 	margin: 5px 25px 25px;
 	text-align: right;
 	}
-
-
