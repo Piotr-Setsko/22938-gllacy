@@ -3,6 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Сливочное мороженое - Магазин мороженого «Глейси»</title>
+	<style>
+		html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url( "gllacy-catalog-1200.jpg" );
+  }
+
+  BODY {
+		opacity: 0.7;
+  }
+	</style>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -44,9 +55,11 @@
 						<span class="visually-hidden">Поиск</span>
 					</a>
 					<div class="modal search-form">
-						<form action="/echo" method="post">
-							<label class="visually-hidden" for="search">Поиск</label>
-							<input type="search" name="search" id="search" placeholder="Что ищем?">
+						<form action="https://echo.htmlacademy.ru" method="get">
+							<div class="placeholder">
+								<input type="search" name="search" id="search" placeholder="Что ищем?" required>
+								<label for="search">Что ищем?</label>
+							</div>
 						</form>
 					</div>
 					</li>
@@ -58,11 +71,15 @@
 							<span>Вход</span>
 						</a>
 						<div class="modal enter-form">
-							<form action="/echo" method="post">
-								<label class="visually-hidden" for="email-enter">Электронная почта для входа в личный кабинет</label>
-								<input type="email" name="email-enter" id="email-enter" placeholder="Электронная почта" required>
-								<label class="visually-hidden" for="password-enter">Пароль к личному кабинету</label>
-								<input type="password" name="password" id="password-enter" placeholder="Пароль" required>
+							<form action="https://echo.htmlacademy.ru" method="post">
+								<div class="placeholder">										
+									<input type="email" name="email-enter" id="email-enter" placeholder="Электронная почта" required>
+									<label for="email-enter">Электронная почта</label>
+								</div>
+								<div class="placeholder">										
+									<input type="password" name="password" id="password-enter" placeholder="Пароль" required>
+									<label for="password-enter">Пароль</label>
+								</div>										
 								<div class="half-width">
 									<div class="button-enter">
 										<button class="btn" type="submit" name="enter">Войти</button>
@@ -136,7 +153,7 @@
 		</ol>
 		<h1 class="product-brand">Сливочное мороженое</h1>
 		<section class="sort-form">
-			<form action="/echo" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<div class="sort-section">
 					<div class="sort-items">
 						<label class="upper" for="kind-sort">Сортировка:</label>
@@ -152,12 +169,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="range-filter">
+					<div class="range-filter">	
 						<div class="price-controls">
-							<label for="price">Цена:</label>
-							<input class="min-price" type="text" value="100"><span>руб. ‒</span>
-							<input class="max-price" type="text" value="500"><span>руб.</span>
-						</div>
+							<span>Цена:</span>
+							<input class="min-price" id="min-price" type="text" value="100"><span>руб. ‒</span>
+							<label class="visually-hidden" for="min-price">Минимальная стоимость</label>
+							<input class="max-price" id="max-price" type="text" value="500"><span>руб.</span>
+							<label class="visually-hidden" for="max-price">Максимальная стоимость</label>
+						</div>												
 						<div class="range-controls">
 							<div class="scale"><div class="bar"></div></div>
 						</div>

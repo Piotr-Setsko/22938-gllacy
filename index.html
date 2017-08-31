@@ -49,9 +49,9 @@
 								<span class="visually-hidden">Поиск</span>
 							</a>
 							<div class="modal search-form">
-								<form action="/echo" method="post">
+								<form action="https://echo.htmlacademy.ru" method="get">
 									<div class="placeholder">
-										<input type="text" name="search" id="search" placeholder="Что ищем?" required>
+										<input type="search" name="search" id="search" placeholder="Что ищем?" required>
 										<label for="search">Что ищем?</label>
 									</div>
 								</form>
@@ -65,11 +65,15 @@
 								<span>Вход</span>
 							</a>
 							<div class="modal enter-form">
-								<form action="/echo" method="post">
-									<label class="visually-hidden" for="email-enter">Электронная почта для входа в личный кабинет</label>
-									<input type="email" name="email-enter" id="email-enter" placeholder="Электронная почта" required>
-									<label class="visually-hidden" for="password-enter">Пароль к личному кабинету</label>
-									<input type="password" name="password" id="password-enter" placeholder="Пароль" required>
+								<form action="https://echo.htmlacademy.ru" method="post">
+									<div class="placeholder">										
+										<input type="email" name="email-enter" id="email-enter" placeholder="Электронная почта" required>
+										<label for="email-enter">Электронная почта</label>
+									</div>
+									<div class="placeholder">										
+										<input type="password" name="password" id="password-enter" placeholder="Пароль" required>
+										<label for="password-enter">Пароль</label>
+									</div>	
 									<div class="half-width">
 										<div class="button-enter">
 											<button class="btn" type="submit" name="enter">Войти</button>
@@ -214,9 +218,11 @@
 						<div class="subs-fon">
 							<p class="subs">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 							<div class="subs-email">
-								<form action="/echo" method="post">
-									<label class="visually-hidden" for="subscription-email">Электронная почта для рассылки</label>
-									<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
+								<form action="https://echo.htmlacademy.ru" method="post">
+									<div class="placeholder">										
+										<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
+										<label for="subscription-email">Электронная почта</label>
+									</div>		
 									<button class="btn" type="submit" name="send-email">Отправить</button>
 								</form>
 							</div>
@@ -280,23 +286,23 @@
 		</footer>
 	</div>
 		<section class="modal-feedback">
-			<form action="/echo" method="post">
-				<div class="feedback-top">
-					<p>Мы обязательно вам ответим</p>
-					<button class="cross-btn">
-						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
-					</button>
-				</div>
+			<div class="feedback-top">
+				<p>Мы обязательно вам ответим!</p>
+				<button class="cross-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
+				</button>
+			</div>
+			<form action="https://echo.htmlacademy.ru" method="post">				
 				<div class="placeholder">
-					<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+					<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
 					<label for="user-name">Как вас зовут?</label>
 				</div>
 				<div class="placeholder">
-					<input type="text" name="user-mail" id="user-mail" placeholder="Ваша почта для ответа?">
+					<input type="email" name="user-mail" id="user-mail" placeholder="Ваша почта для ответа?" required>
 					<label for="user-mail">Ваша почта для ответа?</label>
 				</div>
 				<div class="placeholder">
-					<textarea id="user-text" cols="40" rows="10" placeholder="Напишите что нибудь..."></textarea>
+					<textarea id="user-text" placeholder="Напишите что нибудь..." required></textarea>
 					<label for="user-text">Напишите что нибудь...</label>
 				</div>
 				<div class="feedback-btn">
