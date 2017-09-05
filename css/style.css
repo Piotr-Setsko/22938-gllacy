@@ -1,5 +1,5 @@
 body {
-  min-width: 900px;
+  min-width: 1200px;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -17,7 +17,7 @@ img {
 }
 
 .site-wrapper {
-	min-width: 900px;
+	min-width: 1200px;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -128,6 +128,7 @@ input[type="checkbox"] {
 
 .placeholder input[required]:focus:invalid,
 .placeholder textarea[required]:focus:invalid {
+	padding: 8px 12px;
 	border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -156,7 +157,7 @@ input[type="checkbox"] {
 
 .placeholder input:valid,
 .placeholder textarea:valid {
-	padding-top: 11px;
+	padding-top: 10px;
 	padding-left: 13px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -359,6 +360,7 @@ input[type="checkbox"] {
 
 .action-buttons .search {	
 	padding: 6px 9px 0 6px;	
+	font-size: 0;
 }
 
 .action-buttons .enter {	
@@ -1264,23 +1266,23 @@ input[type="checkbox"]:checked + label::before {
 	padding: 10px 15px;
 }
 
-.map {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
-	flex-wrap: wrap;
+.map {	
+	position: relative;
 	margin: 0 auto;
 	margin-top: 40px;
 	width: 1200px;
-	min-height: 430px;
+	height: 430px;
 	background: #e9e2c6 url(../img/map_bg.jpg) no-repeat;
 }
 
-.map .marker {
-	display: none;
+.modal-map iframe {  
+  border: none;
 }
 
 .map-form {
+	position: absolute;
+	top: 0;
+	right: 0;	
 	margin-top: 63px;
 	margin-right: 25px;
 	width: 302px;
@@ -1530,6 +1532,46 @@ footer .footer-social {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-feedback {
 	display: none;	
 	position: fixed;
@@ -1542,6 +1584,15 @@ footer .footer-social {
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	z-index: 10;
+}
+
+.modal-show {
+  display: block;  
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback .feedback-top {
