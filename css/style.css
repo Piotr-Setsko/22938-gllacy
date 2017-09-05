@@ -1336,6 +1336,7 @@ input[type="checkbox"]:checked + label::before {
 
 .map-form .tel-bold {
 	display: inline-block;
+	vertical-align: top;
 	margin-top: 5px;
 	margin-left: 25px;
 	font-weight: 700;
@@ -1389,7 +1390,6 @@ input[type="checkbox"]:checked + label::before {
 	margin-left: 21px;
 	font-size: 16px;
 	line-height: 18px;
-	vertical-align: top;
 }
 
 .paginator a {
@@ -1590,6 +1590,13 @@ footer .footer-social {
   80% {
     transform: translateX(10px);
   }
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000000;
 }
 
 .modal-feedback {
