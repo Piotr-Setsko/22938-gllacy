@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Магазин мороженого «Глейси»</title>	
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">		
+	<title>Магазин мороженого «Глейси»</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -11,8 +11,8 @@
 	<input type="radio" id="btn-1" name="toggle" checked>
 	<input type="radio" id="btn-2" name="toggle">
 	<input type="radio" id="btn-3" name="toggle">
-	<div class="site-wrapper">
-		<header class="main-header content-wrapper">
+
+		<header class="main-header content-wrapper site-wrapper">
 			<div class="header-top">
 				<div class="header-left">
 					<div class="header-logo">
@@ -35,7 +35,7 @@
 							</li>
 							<li class="main-list-item">
 								<a href="#">О Компании</a>
-							</li>							
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -66,14 +66,14 @@
 							</a>
 							<div class="modal enter-form">
 								<form action="https://echo.htmlacademy.ru" method="post">
-									<div class="placeholder">										
+									<div class="placeholder">
 										<input type="email" name="email-enter" id="email-enter" placeholder="Электронная почта" required>
 										<label for="email-enter">Электронная почта</label>
 									</div>
-									<div class="placeholder">										
+									<div class="placeholder">
 										<input type="password" name="password" id="password-enter" placeholder="Пароль" required>
 										<label for="password-enter">Пароль</label>
-									</div>	
+									</div>
 									<div class="half-width">
 										<div class="button-enter">
 											<button class="btn" type="submit" name="enter">Войти</button>
@@ -106,7 +106,7 @@
 			</div>
 		</header>
 		<main>
-			<div class="content-wrapper">
+			<div class="content-wrapper site-wrapper">
 				<div class="slider">
 					<div class="slide" id="slide1">
 						<div class="slide-tagline">
@@ -219,10 +219,10 @@
 							<p class="subs">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 							<div class="subs-email">
 								<form action="https://echo.htmlacademy.ru" method="post">
-									<div class="placeholder">										
+									<div class="placeholder">
 										<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
 										<label for="subscription-email">Электронная почта</label>
-									</div>		
+									</div>
 									<button class="btn" type="submit" name="send-email">Отправить</button>
 								</form>
 							</div>
@@ -231,7 +231,7 @@
 				</article>
 			</div>
 			<div class="map">
-			<iframe src="https://yandex.by/map-widget/v1/-/CBUZzOUDgD" width="1200" height="430" frameborder="0"></iframe>	
+			<iframe src="https://yandex.by/map-widget/v1/-/CBUZzOUDgD" width="100%" height="430" frameborder="0"></iframe>
 				<section class="map-form">
 					<p class="address-norm">
 						Адрес главного офиса и офлайн магазина:
@@ -254,18 +254,18 @@
 				</section>
 			</div>
 		</main>
-		<footer class="content-wrapper flex">
+		<footer class="content-wrapper site-wrapper flex">
 			<section class="footer-social">
-				<a class="social-btn social-btn-tw"  href="#">					
+				<a class="social-btn social-btn-tw"  href="#">
 					<span class="visually-hidden">Твитер</span>
 				</a>
-				<a class="social-btn social-btn-inst" href="#">					
+				<a class="social-btn social-btn-inst" href="#">
 					<span class="visually-hidden">Инстаграм</span>
 				</a>
-				<a class="social-btn social-btn-fb" href="#">					
+				<a class="social-btn social-btn-fb" href="#">
 					<span class="visually-hidden">Фейсбук</span>
 				</a>
-				<a class="social-btn social-btn-vk" href="#">					
+				<a class="social-btn social-btn-vk" href="#">
 					<span class="visually-hidden">Вконтакте</span>
 				</a>
 			</section>
@@ -292,7 +292,7 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
 				</button>
 			</div>
-			<form action="https://echo.htmlacademy.ru" method="post">				
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<div class="placeholder">
 					<input type="text" name="user-name" id="user-name" placeholder="Как вас зовут?" required>
 					<label for="user-name">Как вас зовут?</label>
@@ -310,6 +310,6 @@
 				</div>
 			</form>
 		</section>
-		<script src="js/modal.js"></script>		
+		<script src="js/modal.js"></script>
 </body>
 </html>
