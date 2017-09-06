@@ -1,6 +1,7 @@
 	var link = document.querySelector(".feedback");
-
+	
 	var popup = document.querySelector(".modal-feedback");
+	var overlay = document.querySelector(".overlay");		
 	var close = popup.querySelector(".cross-btn");
 
 	var form = popup.querySelector("form");
@@ -12,6 +13,8 @@
 	link.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popup.classList.add("modal-show");
+		overlay.classList.add("overlay-show");
+		
 
 		if (storage) {
 			login.value = storage;
@@ -24,6 +27,7 @@
 	close.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popup.classList.remove("modal-show");
+		overlay.classList.remove("overlay-show");
 		popup.classList.remove("modal-error");
 	});
 
@@ -43,6 +47,7 @@
 		if (evt.keyCode === 27) {
 			if (popup.classList.contains("modal-show")) {
 				popup.classList.remove("modal-show");
+				overlay.classList.remove("overlay-show");
 				popup.classList.remove("modal-error");
 			}
 		}
